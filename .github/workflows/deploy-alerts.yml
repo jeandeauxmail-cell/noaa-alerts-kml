@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:  # Enables manual runs
 
 permissions:
   contents: write
@@ -15,6 +16,17 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Generate KML
+        run: python alert.py
 
       - name: Deploy Alerts KML to gh-pages
         uses: peaceiris/actions-gh-pages@v3
