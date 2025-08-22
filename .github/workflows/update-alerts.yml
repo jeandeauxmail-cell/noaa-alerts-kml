@@ -1,26 +1,40 @@
-# .github/workflows/update-alerts.yml
-name: Update Alerts KML
+name: Update Alerts Overlay
 
 on:
   schedule:
-    - cron: '*/15 * * * *'
+    - cron:  '*/15 * * * *'   # every 15 minutes
   workflow_dispatch:
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Set up Python
+
+      # 1. Check out the main branch
+      - name: Checkout main
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0        # required for pushing tags/branches
+
+      # 2. Set up Python & install requests
+      - name: Setup Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.x'
+
       - name: Install dependencies
         run: pip install requests
+
+      # 3. Run your alert parser
       - name: Generate KML
-        run: python alert.py
+        run: python alert.py   # produces alerts-overlay.kml
+
+      # 4. Deploy to gh-pages branch
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./
+          publish_dir: ./      # publishes everything in repo root
+          publish_branch: gh-pages
+          user_name: github-actions
+          user_email: actions@github.com
