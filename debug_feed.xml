@@ -2,26 +2,26 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:cap="urn:oasis:names:tc:emergency:cap:1.2">
     <id>https://api.weather.gov/alerts.atom?active=1</id>
     <generator>NWS CAP Server</generator>
-    <updated>2025-08-22T17:33:43+00:00</updated>
+    <updated>2025-08-22T17:44:26+00:00</updated>
     <author>
         <name>w-nws.webmaster@noaa.gov</name>
     </author>
     <title>Current watches, warnings, and advisories</title>
     <link rel="self" href="https://api.weather.gov/alerts.atom?active=1"/>
     <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0-KEEPALIVE-11750</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0-KEEPALIVE-11750.cap"/>
-        <updated>2025-08-22T17:33:34+00:00</updated>
-        <published>2025-08-22T17:33:34+00:00</published>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0-KEEPALIVE-25780</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0-KEEPALIVE-25780.cap"/>
+        <updated>2025-08-22T17:43:34+00:00</updated>
+        <published>2025-08-22T17:43:34+00:00</published>
         <author>
             <name>NWS</name>
         </author>
         <title/>
         <summary>Monitoring message only. Please disregard.</summary>
         <cap:event>Test Message</cap:event>
-        <cap:sent>2025-08-22T17:33:34+00:00</cap:sent>
-        <cap:effective>2025-08-22T17:33:34+00:00</cap:effective>
-        <cap:expires>2025-08-22T17:43:34+00:00</cap:expires>
+        <cap:sent>2025-08-22T17:43:34+00:00</cap:sent>
+        <cap:effective>2025-08-22T17:43:34+00:00</cap:effective>
+        <cap:expires>2025-08-22T17:53:34+00:00</cap:expires>
         <cap:status>Test</cap:status>
         <cap:msgType>Alert</cap:msgType>
         <cap:category>Met</cap:category>
@@ -44,7 +44,7 @@
         </cap:parameter>
         <cap:parameter>
             <valueName>WMOidentifier</valueName>
-            <value>NZUS91 KWBC 221733</value>
+            <value>NZUS91 KWBC 221743</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>BLOCKCHANNEL</valueName>
@@ -69,6 +69,751 @@
         <cap:eventCode>
             <valueName>NationalWeatherService</valueName>
             <value>TST</value>
+        </cap:eventCode>
+    </entry>
+    <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.29b63d57ab3b8110d685689047637a5adceb83b8.001.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.29b63d57ab3b8110d685689047637a5adceb83b8.001.1.cap"/>
+        <updated>2025-08-22T13:39:00-04:00</updated>
+        <published>2025-08-22T13:39:00-04:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>Flash Flood Warning issued August 22 at 1:39PM EDT until August 22 at 3:30PM EDT by NWS Charleston SC</title>
+        <summary>FFWCHS
+
+The National Weather Service in Charleston has issued a
+
+* Flash Flood Warning for...
+Berkeley County in southeastern South Carolina...
+
+* Until 330 PM EDT.
+
+* At 139 PM EDT, Doppler radar indicated thunderstorms with
+torrential rainfall extending from Moncks Corner to Carnes
+Crossroads. As much as 1 to 2 inches of rain has fallen so far
+today and an additional 1 to 3 inches could fall through 330 PM,
+resulting in areas of flash flooding. Road closures are possible,
+especially around the city of Moncks Corner.
+
+HAZARD...Flash flooding caused by thunderstorms.
+
+SOURCE...Radar indicated.
+
+IMPACT...Flash flooding of small creeks and streams, urban
+areas, highways, streets and underpasses as well as
+other poor drainage and low-lying areas.
+
+* Some locations that will experience flash flooding include...
+Moncks Corner, Ladson, Pinopolis, Old Santee Canal State Park,
+Sangaree, Whitesville, Murraysville, Saint Johns, Berkeley County
+Airport and Sugar Hill.</summary>
+        <cap:event>Flash Flood Warning</cap:event>
+        <cap:sent>2025-08-22T13:39:00-04:00</cap:sent>
+        <cap:effective>2025-08-22T13:39:00-04:00</cap:effective>
+        <cap:onset>2025-08-22T13:39:00-04:00</cap:onset>
+        <cap:expires>2025-08-22T15:30:00-04:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Alert</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Immediate</cap:urgency>
+        <cap:severity>Severe</cap:severity>
+        <cap:certainty>Likely</cap:certainty>
+        <cap:areaDesc>Berkeley, SC</cap:areaDesc>
+        <cap:polygon>33.28,-80.14 33.27,-80.1 33.22,-80.0699999 33.21,-80.05 33.25,-80.03 33.25,-80.02 33.22,-80.03 33.25,-79.99 33.24,-79.89 33.13,-79.94 33.03,-80.12 33.15,-80.26 33.21,-80.17 33.28,-80.14</cap:polygon>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>045015</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>SCC015</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>FFWCHS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>WGUS52 KCHS 221739</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>flashFloodDetection</valueName>
+            <value>RADAR INDICATED</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>EAS-ORG</valueName>
+            <value>WXR</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>VTEC</valueName>
+            <value>/O.NEW.KCHS.FF.W.0020.250822T1739Z-250822T1930Z/</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventEndingTime</valueName>
+            <value>2025-08-22T15:30:00-04:00</value>
+        </cap:parameter>
+        <cap:scope>Public</cap:scope>
+        <cap:code>IPAWSv1.0</cap:code>
+        <cap:language>en-US</cap:language>
+        <cap:web>http://www.weather.gov</cap:web>
+        <cap:eventCode>
+            <valueName>SAME</valueName>
+            <value>FFW</value>
+        </cap:eventCode>
+        <cap:eventCode>
+            <valueName>NationalWeatherService</valueName>
+            <value>FFW</value>
+        </cap:eventCode>
+    </entry>
+    <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.628ba3eed589c00cd988640f94501f320d212921.001.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.628ba3eed589c00cd988640f94501f320d212921.001.1.cap"/>
+        <updated>2025-08-22T12:37:00-05:00</updated>
+        <published>2025-08-22T12:37:00-05:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>Special Weather Statement issued August 22 at 12:37PM CDT by NWS New Orleans LA</title>
+        <summary>At 1237 PM CDT, Doppler radar was tracking a cluster of strong
+thunderstorms over Gretna, or over Harvey. These storms were nearly
+stationary.
+
+HAZARD...Winds in excess of 40 mph.
+
+SOURCE...Radar indicated.
+
+IMPACT...Gusty winds could knock down tree limbs and blow around
+unsecured objects.
+
+Locations impacted include...
+New Orleans, Chalmette, Marrero, Harvey, East New Orleans,
+Timberlane, Belle Chasse, Metairie, Jefferson, Gretna, Westwego,
+Woodmere, Violet, Terrytown, Meraux, Poydras, Estelle, Arabi, and
+Lakefront Airport.
+
+This includes the following Interstates...
+Interstate 10 in Louisiana between mile markers 231 and 255.
+Interstate 510 between mile markers 1 and 3.
+Interstate 610 between mile markers 1 and 4.</summary>
+        <cap:event>Special Weather Statement</cap:event>
+        <cap:sent>2025-08-22T12:37:00-05:00</cap:sent>
+        <cap:effective>2025-08-22T12:37:00-05:00</cap:effective>
+        <cap:onset>2025-08-22T12:37:00-05:00</cap:onset>
+        <cap:expires>2025-08-22T14:00:00-05:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Alert</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Expected</cap:urgency>
+        <cap:severity>Moderate</cap:severity>
+        <cap:certainty>Observed</cap:certainty>
+        <cap:areaDesc>Upper St. Bernard; Western Orleans; Eastern Orleans; Upper Jefferson; Upper Plaquemines</cap:areaDesc>
+        <cap:polygon>29.87,-90.12 29.88,-90.14 30.04,-90.13 30.08,-90 30.17,-89.88 30.12,-89.75 30.01,-89.78 29.98,-89.84 29.93,-89.8 30,-89.91 29.91,-89.81 29.85,-89.83 29.85,-89.9 29.89,-89.93 29.9,-89.98 29.85,-90.03 29.83,-90.12 29.87,-90.12</cap:polygon>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>022087</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>022071</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>022051</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>022075</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>LAZ064</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>LAZ077</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>LAZ078</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>LAZ087</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>LAZ089</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>SPSLIX</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>WWUS84 KLIX 221737</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>NWSheadline</valueName>
+            <value>STRONG THUNDERSTORMS WILL IMPACT PORTIONS OF WEST CENTRAL ST. BERNARD, ORLEANS AND NORTH CENTRAL JEFFERSON PARISHES THROUGH 200 PM CDT</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventMotionDescription</valueName>
+            <value>2025-08-22T17:37:00-00:00...storm...200DEG...1KT...29.92,-90.07</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>maxWindGust</valueName>
+            <value>40 MPH</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>maxHailSize</valueName>
+            <value>0.00</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>EAS-ORG</valueName>
+            <value>WXR</value>
+        </cap:parameter>
+        <cap:scope>Public</cap:scope>
+        <cap:code>IPAWSv1.0</cap:code>
+        <cap:language>en-US</cap:language>
+        <cap:web>http://www.weather.gov</cap:web>
+        <cap:eventCode>
+            <valueName>SAME</valueName>
+            <value>SPS</value>
+        </cap:eventCode>
+        <cap:eventCode>
+            <valueName>NationalWeatherService</valueName>
+            <value>SPS</value>
+        </cap:eventCode>
+    </entry>
+    <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.47af26b8b2652d30f23b046024d9255511f25a6d.001.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.47af26b8b2652d30f23b046024d9255511f25a6d.001.1.cap"/>
+        <updated>2025-08-22T12:35:00-05:00</updated>
+        <published>2025-08-22T12:35:00-05:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>Special Weather Statement issued August 22 at 12:35PM CDT by NWS New Orleans LA</title>
+        <summary>At 1234 PM CDT, Doppler radar was tracking a strong thunderstorm near
+Slidell. This thunderstorm was nearly stationary.
+
+HAZARD...Winds in excess of 40 mph.
+
+SOURCE...Radar indicated.
+
+IMPACT...Gusty winds could knock down tree limbs and blow around
+unsecured objects.
+
+Locations impacted include...
+Slidell, Pearl River, Pearlington, Stennis Space Center, and Slidell
+Airport.
+
+This includes the following Interstates...
+Interstate 10 in Louisiana between mile markers 261 and 273.
+Interstate 10 in Mississippi between mile markers 1 and 6.
+Interstate 12 between mile markers 81 and 84.
+Interstate 59 in Louisiana between mile markers 1 and 10.</summary>
+        <cap:event>Special Weather Statement</cap:event>
+        <cap:sent>2025-08-22T12:35:00-05:00</cap:sent>
+        <cap:effective>2025-08-22T12:35:00-05:00</cap:effective>
+        <cap:onset>2025-08-22T12:35:00-05:00</cap:onset>
+        <cap:expires>2025-08-22T14:00:00-05:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Alert</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Expected</cap:urgency>
+        <cap:severity>Moderate</cap:severity>
+        <cap:certainty>Observed</cap:certainty>
+        <cap:areaDesc>Southeast St. Tammany; Northern St. Tammany; Northern Hancock; Southern Hancock</cap:areaDesc>
+        <cap:polygon>30.46,-89.56 30.23,-89.52 30.21,-89.86 30.22,-89.87 30.27,-89.85 30.3,-89.83 30.32,-89.83 30.46,-89.78 30.46,-89.56</cap:polygon>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>022103</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>028045</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>LAZ076</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>LAZ079</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>MSZ083</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>MSZ086</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>SPSLIX</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>WWUS84 KLIX 221735</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>NWSheadline</valueName>
+            <value>A STRONG THUNDERSTORM WILL IMPACT PORTIONS OF SOUTHEASTERN ST. TAMMANY PARISH IN SOUTHEASTERN LOUISIANA AND SOUTHWESTERN HANCOCK COUNTIES THROUGH 200 PM CDT</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventMotionDescription</valueName>
+            <value>2025-08-22T17:34:00-00:00...storm...242DEG...4KT...30.32,-89.75</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>maxWindGust</valueName>
+            <value>40 MPH</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>maxHailSize</valueName>
+            <value>0.00</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>EAS-ORG</valueName>
+            <value>WXR</value>
+        </cap:parameter>
+        <cap:scope>Public</cap:scope>
+        <cap:code>IPAWSv1.0</cap:code>
+        <cap:language>en-US</cap:language>
+        <cap:web>http://www.weather.gov</cap:web>
+        <cap:eventCode>
+            <valueName>SAME</valueName>
+            <value>SPS</value>
+        </cap:eventCode>
+        <cap:eventCode>
+            <valueName>NationalWeatherService</valueName>
+            <value>SPS</value>
+        </cap:eventCode>
+    </entry>
+    <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9a1c70d841deed8c7c1d8f2a6339c46c062789ac.001.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9a1c70d841deed8c7c1d8f2a6339c46c062789ac.001.1.cap"/>
+        <updated>2025-08-22T13:35:00-04:00</updated>
+        <published>2025-08-22T13:35:00-04:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>Coastal Flood Advisory issued August 22 at 1:35PM EDT until August 22 at 11:00PM EDT by NWS Charleston SC</title>
+        <summary>* WHAT...Up to one half foot of inundation above ground level
+expected along shorelines and tidal waterways (7.3 to 7.5 feet
+Mean Lower Low Water at Charleston).
+
+* WHERE...Coastal Colleton and Charleston Counties.
+
+* WHEN...From 7 PM to 11 PM EDT this evening.
+
+* IMPACTS...This could result in some roads becoming impassable.
+
+* ADDITIONAL DETAILS...High tide will occur around 8:22 PM today
+at Charleston. Saltwater inundation will be possible 1 to 2
+hours before and after high tide.</summary>
+        <cap:event>Coastal Flood Advisory</cap:event>
+        <cap:sent>2025-08-22T13:35:00-04:00</cap:sent>
+        <cap:effective>2025-08-22T13:35:00-04:00</cap:effective>
+        <cap:onset>2025-08-22T19:00:00-04:00</cap:onset>
+        <cap:expires>2025-08-22T21:45:00-04:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Update</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Expected</cap:urgency>
+        <cap:severity>Minor</cap:severity>
+        <cap:certainty>Likely</cap:certainty>
+        <cap:areaDesc>Coastal Colleton; Charleston</cap:areaDesc>
+        <cap:polygon/>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>045029</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>045019</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>SCZ049</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>SCZ050</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>CFWCHS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>WHUS42 KCHS 221735</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>NWSheadline</valueName>
+            <value>COASTAL FLOOD ADVISORY REMAINS IN EFFECT FROM 7 PM TO 11 PM EDT THIS EVENING</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>VTEC</valueName>
+            <value>/O.CON.KCHS.CF.Y.0014.250822T2300Z-250823T0300Z/</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventEndingTime</valueName>
+            <value>2025-08-22T23:00:00-04:00</value>
+        </cap:parameter>
+        <cap:scope>Public</cap:scope>
+        <cap:code>IPAWSv1.0</cap:code>
+        <cap:language>en-US</cap:language>
+        <cap:web>http://www.weather.gov</cap:web>
+        <cap:eventCode>
+            <valueName>SAME</valueName>
+            <value>NWS</value>
+        </cap:eventCode>
+        <cap:eventCode>
+            <valueName>NationalWeatherService</valueName>
+            <value>CFY</value>
+        </cap:eventCode>
+    </entry>
+    <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9241c2913153fd5777f7b8d6fcbd286ea51868ce.001.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9241c2913153fd5777f7b8d6fcbd286ea51868ce.001.1.cap"/>
+        <updated>2025-08-22T13:34:00-04:00</updated>
+        <published>2025-08-22T13:34:00-04:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>Flood Watch issued August 22 at 1:34PM EDT until August 24 at 2:00AM EDT by NWS Charleston SC</title>
+        <summary>* WHAT...Flash flooding caused by excessive rainfall continues to be
+possible.
+
+* WHERE...Portions of southeast Georgia, including the following
+areas, Bulloch, Candler, Coastal Bryan, Coastal Chatham, Coastal
+Liberty, Coastal McIntosh, Effingham, Evans, Inland Bryan, Inland
+Chatham, Inland Liberty, Inland McIntosh, Jenkins, Long, Screven
+and Tattnall and southeast South Carolina, including the following
+areas, Allendale, Beaufort, Charleston, Coastal Colleton, Coastal
+Jasper, Dorchester, Hampton, Inland Berkeley, Inland Colleton,
+Inland Jasper and Tidal Berkeley.
+
+* WHEN...Through late Saturday night.
+
+* IMPACTS...Excessive runoff may result in flooding of rivers,
+creeks, streams, and other low-lying and flood-prone locations.
+Creeks and streams may rise out of their banks. Flooding may occur
+in poor drainage and urban areas. Storm drains and ditches may
+become clogged with debris. Extensive street flooding and flooding
+of creeks and rivers are possible.
+
+* ADDITIONAL DETAILS...
+- Numerous to widespread showers and thunderstorms will impact
+the region Friday through Saturday. Rainfall amounts of 2 to
+4 inches can be expected through early Sunday morning with
+localized amounts exceeding 6 inches. Ground conditions
+remain wet and any sustained period of heavy rainfall will
+likely lead to areas of flash flooding.
+- http://www.weather.gov/safety/flood</summary>
+        <cap:event>Flood Watch</cap:event>
+        <cap:sent>2025-08-22T13:34:00-04:00</cap:sent>
+        <cap:effective>2025-08-22T13:34:00-04:00</cap:effective>
+        <cap:onset>2025-08-22T13:34:00-04:00</cap:onset>
+        <cap:expires>2025-08-22T21:45:00-04:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Update</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Future</cap:urgency>
+        <cap:severity>Severe</cap:severity>
+        <cap:certainty>Possible</cap:certainty>
+        <cap:areaDesc>Jenkins; Screven; Candler; Bulloch; Effingham; Tattnall; Evans; Inland Bryan; Coastal Bryan; Inland Chatham; Coastal Chatham; Long; Inland Liberty; Coastal Liberty; Inland McIntosh; Coastal McIntosh; Allendale; Hampton; Inland Colleton; Dorchester; Inland Berkeley; Inland Jasper; Beaufort; Coastal Colleton; Charleston; Coastal Jasper; Tidal Berkeley</cap:areaDesc>
+        <cap:polygon/>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>013165</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>013251</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>013043</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>013031</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>013103</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>013267</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>013109</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>013029</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>013051</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>013183</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>013179</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>013191</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>045005</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>045049</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>045029</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>045035</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>045015</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>045053</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>045013</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>045019</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>GAZ087</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>GAZ088</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>GAZ099</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>GAZ100</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>GAZ101</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>GAZ114</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>GAZ115</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>GAZ116</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>GAZ117</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>GAZ118</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>GAZ119</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>GAZ137</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>GAZ138</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>GAZ139</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>GAZ140</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>GAZ141</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>SCZ040</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>SCZ042</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>SCZ043</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>SCZ044</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>SCZ045</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>SCZ047</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>SCZ048</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>SCZ049</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>SCZ050</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>SCZ051</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>SCZ052</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>FFACHS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>WGUS62 KCHS 221734</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>NWSheadline</valueName>
+            <value>FLOOD WATCH REMAINS IN EFFECT THROUGH LATE SATURDAY NIGHT</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>EAS-ORG</valueName>
+            <value>WXR</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>VTEC</valueName>
+            <value>/O.CON.KCHS.FA.A.0002.000000T0000Z-250824T0600Z/</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventEndingTime</valueName>
+            <value>2025-08-24T02:00:00-04:00</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>expiredReferences</valueName>
+            <value>w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.326f9595d9a61b275d14cd68dea5609cead5c3ae.001.1,2025-08-22T01:38:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.d9bdcadcd174fb8c4c9d0a2679fda095d0203d7e.001.1,2025-08-21T20:31:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.fb8f7227b478f66ebcb6fd95a16b7f4e6ceee957.001.1,2025-08-21T13:02:00-04:00</value>
+        </cap:parameter>
+        <cap:scope>Public</cap:scope>
+        <cap:code>IPAWSv1.0</cap:code>
+        <cap:language>en-US</cap:language>
+        <cap:web>http://www.weather.gov</cap:web>
+        <cap:eventCode>
+            <valueName>SAME</valueName>
+            <value>FFA</value>
+        </cap:eventCode>
+        <cap:eventCode>
+            <valueName>NationalWeatherService</valueName>
+            <value>FAA</value>
         </cap:eventCode>
     </entry>
     <entry>
@@ -3893,110 +4638,6 @@ Conroe, The Woodlands and Lake Conroe Dam.
         </cap:eventCode>
     </entry>
     <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.3a8a0d0b370592d1477367a00c3ac64c02113b4a.001.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.3a8a0d0b370592d1477367a00c3ac64c02113b4a.001.1.cap"/>
-        <updated>2025-08-22T12:21:00-04:00</updated>
-        <published>2025-08-22T12:21:00-04:00</published>
-        <author>
-            <name>NWS</name>
-        </author>
-        <title>Flood Advisory issued August 22 at 12:21PM EDT until August 22 at 2:15PM EDT by NWS Charleston SC</title>
-        <summary>* WHAT...Flooding caused by excessive rainfall is expected.
-
-* WHERE...A portion of southeast South Carolina, including the
-following counties, Beaufort and Jasper.
-
-* WHEN...Until 215 PM EDT.
-
-* IMPACTS...Minor flooding in low-lying and poor drainage areas.
-
-* ADDITIONAL DETAILS...
-- At 1220 PM EDT, Doppler radar indicated heavy rain due to
-thunderstorms. Minor flooding is ongoing or expected to begin
-shortly in the advisory area. Between 1 and 2 inches of rain
-have fallen.
-- Additional rainfall amounts of 1 to 2 inches are expected
-over the area. This additional rain will result in minor
-flooding.
-- Some locations that will experience flooding include...
-Hilton Head Island, Bluffton, Forest Beach, Hilton Head
-Airport, Folly Field, Calibogue Cay, Harbortown, Lawton, Sea
-Pines and Brighton Beach.</summary>
-        <cap:event>Flood Advisory</cap:event>
-        <cap:sent>2025-08-22T12:21:00-04:00</cap:sent>
-        <cap:effective>2025-08-22T12:21:00-04:00</cap:effective>
-        <cap:onset>2025-08-22T12:21:00-04:00</cap:onset>
-        <cap:expires>2025-08-22T14:15:00-04:00</cap:expires>
-        <cap:status>Actual</cap:status>
-        <cap:msgType>Alert</cap:msgType>
-        <cap:category>Met</cap:category>
-        <cap:urgency>Expected</cap:urgency>
-        <cap:severity>Minor</cap:severity>
-        <cap:certainty>Likely</cap:certainty>
-        <cap:areaDesc>Beaufort, SC; Jasper, SC</cap:areaDesc>
-        <cap:polygon>32.07,-80.97 32.15,-80.92 32.19,-80.93 32.2299999,-80.91 32.27,-80.87 32.29,-80.79 32.28,-80.69 32.26,-80.66 32.22,-80.65 32.13,-80.72 32.08,-80.84 32.04,-80.92 32.04,-80.93 32.07,-80.95 32.07,-80.97</cap:polygon>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>045013</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>045053</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>SCC013</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>SCC053</value>
-        </cap:geocode>
-        <cap:parameter>
-            <valueName>AWIPSidentifier</valueName>
-            <value>FLSCHS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>WMOidentifier</valueName>
-            <value>WGUS82 KCHS 221621</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>NWSheadline</valueName>
-            <value>FLOOD ADVISORY IN EFFECT UNTIL 215 PM EDT THIS AFTERNOON</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>EAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>NWEM</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>VTEC</valueName>
-            <value>/O.NEW.KCHS.FA.Y.0110.250822T1621Z-250822T1815Z/</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>eventEndingTime</valueName>
-            <value>2025-08-22T14:15:00-04:00</value>
-        </cap:parameter>
-        <cap:scope>Public</cap:scope>
-        <cap:code>IPAWSv1.0</cap:code>
-        <cap:language>en-US</cap:language>
-        <cap:web>http://www.weather.gov</cap:web>
-        <cap:eventCode>
-            <valueName>SAME</valueName>
-            <value>NWS</value>
-        </cap:eventCode>
-        <cap:eventCode>
-            <valueName>NationalWeatherService</valueName>
-            <value>FAY</value>
-        </cap:eventCode>
-    </entry>
-    <entry>
         <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6322a1b378b397ff9d1d4f548ab765ee81d5a4c7.001.1</id>
         <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6322a1b378b397ff9d1d4f548ab765ee81d5a4c7.001.1.cap"/>
         <updated>2025-08-22T11:21:00-05:00</updated>
@@ -7621,6 +8262,98 @@ localized beach erosion.</summary>
         </cap:eventCode>
     </entry>
     <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2047ea604c071ab7cb2e48de8e5ce3bde9a65ecc.004.2</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2047ea604c071ab7cb2e48de8e5ce3bde9a65ecc.004.2.cap"/>
+        <updated>2025-08-22T10:56:00-04:00</updated>
+        <published>2025-08-22T10:56:00-04:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>Beach Hazards Statement issued August 22 at 10:56AM EDT until August 22 at 8:00PM EDT by NWS Newport/Morehead City NC</title>
+        <summary>* WHAT...For the Beach Hazards Statement, dangerous rip currents
+and large breaking waves in the surf zone. For the Coastal
+Flood Advisory, up to 1 to 2 feet of inundation above ground
+level in low- lying areas near shorelines and tidal waterways.
+
+* WHERE...East Carteret County.
+
+* WHEN...For the Beach Hazards Statement, through this evening.
+For the Coastal Flood Advisory, until midnight EDT tonight.
+
+* IMPACTS...Up to 1 to 2 feet of inundation above ground level is
+possible in low-lying areas near shorelines and tidal waterways
+resulting in a low threat of property damage. Some low lying
+property including parking lots, parks, lawns, and homes
+adjacent to the waterfront may experience shallow flooding. Rip
+currents can sweep even the best swimmers away from shore into
+deeper water.</summary>
+        <cap:event>Beach Hazards Statement</cap:event>
+        <cap:sent>2025-08-22T10:56:00-04:00</cap:sent>
+        <cap:effective>2025-08-22T10:56:00-04:00</cap:effective>
+        <cap:onset>2025-08-22T10:56:00-04:00</cap:onset>
+        <cap:expires>2025-08-22T23:00:00-04:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Update</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Expected</cap:urgency>
+        <cap:severity>Moderate</cap:severity>
+        <cap:certainty>Likely</cap:certainty>
+        <cap:areaDesc>East Carteret</cap:areaDesc>
+        <cap:polygon/>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>037031</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>NCZ196</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>CFWMHX</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>WHUS42 KMHX 221456</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>NWSheadline</valueName>
+            <value>COASTAL FLOOD ADVISORY REMAINS IN EFFECT UNTIL MIDNIGHT EDT TONIGHT... ...BEACH HAZARDS STATEMENT REMAINS IN EFFECT UNTIL 8 PM EDT THIS EVENING</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>VTEC</valueName>
+            <value>/O.CON.KMHX.BH.S.0054.000000T0000Z-250823T0000Z/</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventEndingTime</valueName>
+            <value>2025-08-22T20:00:00-04:00</value>
+        </cap:parameter>
+        <cap:scope>Public</cap:scope>
+        <cap:code>IPAWSv1.0</cap:code>
+        <cap:language>en-US</cap:language>
+        <cap:web>http://www.weather.gov</cap:web>
+        <cap:eventCode>
+            <valueName>SAME</valueName>
+            <value>NWS</value>
+        </cap:eventCode>
+        <cap:eventCode>
+            <valueName>NationalWeatherService</valueName>
+            <value>BHS</value>
+        </cap:eventCode>
+    </entry>
+    <entry>
         <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2047ea604c071ab7cb2e48de8e5ce3bde9a65ecc.002.1</id>
         <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2047ea604c071ab7cb2e48de8e5ce3bde9a65ecc.002.1.cap"/>
         <updated>2025-08-22T10:56:00-04:00</updated>
@@ -7713,98 +8446,6 @@ localized beach erosion.</summary>
         <cap:eventCode>
             <valueName>NationalWeatherService</valueName>
             <value>CFW</value>
-        </cap:eventCode>
-    </entry>
-    <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2047ea604c071ab7cb2e48de8e5ce3bde9a65ecc.004.2</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2047ea604c071ab7cb2e48de8e5ce3bde9a65ecc.004.2.cap"/>
-        <updated>2025-08-22T10:56:00-04:00</updated>
-        <published>2025-08-22T10:56:00-04:00</published>
-        <author>
-            <name>NWS</name>
-        </author>
-        <title>Beach Hazards Statement issued August 22 at 10:56AM EDT until August 22 at 8:00PM EDT by NWS Newport/Morehead City NC</title>
-        <summary>* WHAT...For the Beach Hazards Statement, dangerous rip currents
-and large breaking waves in the surf zone. For the Coastal
-Flood Advisory, up to 1 to 2 feet of inundation above ground
-level in low- lying areas near shorelines and tidal waterways.
-
-* WHERE...East Carteret County.
-
-* WHEN...For the Beach Hazards Statement, through this evening.
-For the Coastal Flood Advisory, until midnight EDT tonight.
-
-* IMPACTS...Up to 1 to 2 feet of inundation above ground level is
-possible in low-lying areas near shorelines and tidal waterways
-resulting in a low threat of property damage. Some low lying
-property including parking lots, parks, lawns, and homes
-adjacent to the waterfront may experience shallow flooding. Rip
-currents can sweep even the best swimmers away from shore into
-deeper water.</summary>
-        <cap:event>Beach Hazards Statement</cap:event>
-        <cap:sent>2025-08-22T10:56:00-04:00</cap:sent>
-        <cap:effective>2025-08-22T10:56:00-04:00</cap:effective>
-        <cap:onset>2025-08-22T10:56:00-04:00</cap:onset>
-        <cap:expires>2025-08-22T23:00:00-04:00</cap:expires>
-        <cap:status>Actual</cap:status>
-        <cap:msgType>Update</cap:msgType>
-        <cap:category>Met</cap:category>
-        <cap:urgency>Expected</cap:urgency>
-        <cap:severity>Moderate</cap:severity>
-        <cap:certainty>Likely</cap:certainty>
-        <cap:areaDesc>East Carteret</cap:areaDesc>
-        <cap:polygon/>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>037031</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>NCZ196</value>
-        </cap:geocode>
-        <cap:parameter>
-            <valueName>AWIPSidentifier</valueName>
-            <value>CFWMHX</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>WMOidentifier</valueName>
-            <value>WHUS42 KMHX 221456</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>NWSheadline</valueName>
-            <value>COASTAL FLOOD ADVISORY REMAINS IN EFFECT UNTIL MIDNIGHT EDT TONIGHT... ...BEACH HAZARDS STATEMENT REMAINS IN EFFECT UNTIL 8 PM EDT THIS EVENING</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>EAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>NWEM</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>VTEC</valueName>
-            <value>/O.CON.KMHX.BH.S.0054.000000T0000Z-250823T0000Z/</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>eventEndingTime</valueName>
-            <value>2025-08-22T20:00:00-04:00</value>
-        </cap:parameter>
-        <cap:scope>Public</cap:scope>
-        <cap:code>IPAWSv1.0</cap:code>
-        <cap:language>en-US</cap:language>
-        <cap:web>http://www.weather.gov</cap:web>
-        <cap:eventCode>
-            <valueName>SAME</valueName>
-            <value>NWS</value>
-        </cap:eventCode>
-        <cap:eventCode>
-            <valueName>NationalWeatherService</valueName>
-            <value>BHS</value>
         </cap:eventCode>
     </entry>
     <entry>
@@ -9730,30 +10371,32 @@ Wednesday morning.
         </cap:eventCode>
     </entry>
     <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.327889df596f3ecfb577688c820dc362dd6b5ce3.005.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.327889df596f3ecfb577688c820dc362dd6b5ce3.005.1.cap"/>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.327889df596f3ecfb577688c820dc362dd6b5ce3.001.2</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.327889df596f3ecfb577688c820dc362dd6b5ce3.001.2.cap"/>
         <updated>2025-08-22T10:45:00-04:00</updated>
         <published>2025-08-22T10:45:00-04:00</published>
         <author>
             <name>NWS</name>
         </author>
-        <title>Coastal Flood Advisory issued August 22 at 10:45AM EDT until August 24 at 7:00PM EDT by NWS Baltimore MD/Washington DC</title>
-        <summary>* WHAT...One to two feet of inundation above ground level in low
-lying areas due to tidal flooding.
+        <title>Coastal Flood Warning issued August 22 at 10:45AM EDT until August 24 at 10:00AM EDT by NWS Baltimore MD/Washington DC</title>
+        <summary>* WHAT...Two to two and half feet of inundation above ground
+level in low lying areas due to tidal flooding.
 
-* WHERE...Shoreline in the City of Alexandria and Arlington
-County.
+* WHERE...Shoreline in Anne Arundel County.
 
-* WHEN...Until 7 PM EDT Sunday, especially around the time of
+* WHEN...Until 10 AM EDT Sunday, especially around the time of
 high tide.
 
-* IMPACTS...Water is expected to approach the curb near the
-intersection of King Street and Strand Street in Alexandria..
+* IMPACTS...At 3.5 feet, water reaches the floor of the Maritime
+Museum in Annapolis, begins to cover Bowyer Road on the Naval
+Academy campus, and numerous businesses on Dock Street are
+flooded, along with the City Dock parking lot. Bayside Beach
+begins to flood around Harbor Rd and Lake Dr.
 
-* ADDITIONAL DETAILS...Tides one and a half to two feet above
-normal. The next high tide at Alexandria is at 8:46 PM and 9:00
-AM Saturday.</summary>
-        <cap:event>Coastal Flood Advisory</cap:event>
+* ADDITIONAL DETAILS...Tides two to two and a half feet above
+normal. The next high tide at Annapolis U.S. Naval Academy is at
+5:23 PM and 6:10 AM.</summary>
+        <cap:event>Coastal Flood Warning</cap:event>
         <cap:sent>2025-08-22T10:45:00-04:00</cap:sent>
         <cap:effective>2025-08-22T10:45:00-04:00</cap:effective>
         <cap:onset>2025-08-22T10:45:00-04:00</cap:onset>
@@ -9762,25 +10405,17 @@ AM Saturday.</summary>
         <cap:msgType>Update</cap:msgType>
         <cap:category>Met</cap:category>
         <cap:urgency>Expected</cap:urgency>
-        <cap:severity>Minor</cap:severity>
+        <cap:severity>Severe</cap:severity>
         <cap:certainty>Likely</cap:certainty>
-        <cap:areaDesc>Arlington/Falls Church/Alexandria</cap:areaDesc>
+        <cap:areaDesc>Anne Arundel</cap:areaDesc>
         <cap:polygon/>
         <cap:geocode>
             <valueName>SAME</valueName>
-            <value>051013</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>051510</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>051610</value>
+            <value>024003</value>
         </cap:geocode>
         <cap:geocode>
             <valueName>UGC</valueName>
-            <value>VAZ054</value>
+            <value>MDZ014</value>
         </cap:geocode>
         <cap:parameter>
             <valueName>AWIPSidentifier</valueName>
@@ -9792,7 +10427,7 @@ AM Saturday.</summary>
         </cap:parameter>
         <cap:parameter>
             <valueName>NWSheadline</valueName>
-            <value>COASTAL FLOOD ADVISORY NOW IN EFFECT UNTIL 7 PM EDT SUNDAY</value>
+            <value>COASTAL FLOOD WARNING NOW IN EFFECT UNTIL 10 AM EDT SUNDAY... ...COASTAL FLOOD ADVISORY IS CANCELLED</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>BLOCKCHANNEL</valueName>
@@ -9807,16 +10442,16 @@ AM Saturday.</summary>
             <value>CMAS</value>
         </cap:parameter>
         <cap:parameter>
+            <valueName>EAS-ORG</valueName>
+            <value>WXR</value>
+        </cap:parameter>
+        <cap:parameter>
             <valueName>VTEC</valueName>
-            <value>/O.EXT.KLWX.CF.Y.0033.000000T0000Z-250824T2300Z/</value>
+            <value>/O.EXT.KLWX.CF.W.0004.000000T0000Z-250824T1400Z/</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>eventEndingTime</valueName>
-            <value>2025-08-24T19:00:00-04:00</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>expiredReferences</valueName>
-            <value>w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.bf4aeedb25bd8401cb37cf846add8036ae887d92.001.1,2025-08-22T01:33:00-04:00</value>
+            <value>2025-08-24T10:00:00-04:00</value>
         </cap:parameter>
         <cap:scope>Public</cap:scope>
         <cap:code>IPAWSv1.0</cap:code>
@@ -9824,11 +10459,11 @@ AM Saturday.</summary>
         <cap:web>http://www.weather.gov</cap:web>
         <cap:eventCode>
             <valueName>SAME</valueName>
-            <value>NWS</value>
+            <value>CFW</value>
         </cap:eventCode>
         <cap:eventCode>
             <valueName>NationalWeatherService</valueName>
-            <value>CFY</value>
+            <value>CFW</value>
         </cap:eventCode>
     </entry>
     <entry>
@@ -9959,102 +10594,6 @@ PM and 10:26 AM.</summary>
         </cap:eventCode>
     </entry>
     <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.327889df596f3ecfb577688c820dc362dd6b5ce3.001.2</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.327889df596f3ecfb577688c820dc362dd6b5ce3.001.2.cap"/>
-        <updated>2025-08-22T10:45:00-04:00</updated>
-        <published>2025-08-22T10:45:00-04:00</published>
-        <author>
-            <name>NWS</name>
-        </author>
-        <title>Coastal Flood Warning issued August 22 at 10:45AM EDT until August 24 at 10:00AM EDT by NWS Baltimore MD/Washington DC</title>
-        <summary>* WHAT...Two to two and half feet of inundation above ground
-level in low lying areas due to tidal flooding.
-
-* WHERE...Shoreline in Anne Arundel County.
-
-* WHEN...Until 10 AM EDT Sunday, especially around the time of
-high tide.
-
-* IMPACTS...At 3.5 feet, water reaches the floor of the Maritime
-Museum in Annapolis, begins to cover Bowyer Road on the Naval
-Academy campus, and numerous businesses on Dock Street are
-flooded, along with the City Dock parking lot. Bayside Beach
-begins to flood around Harbor Rd and Lake Dr.
-
-* ADDITIONAL DETAILS...Tides two to two and a half feet above
-normal. The next high tide at Annapolis U.S. Naval Academy is at
-5:23 PM and 6:10 AM.</summary>
-        <cap:event>Coastal Flood Warning</cap:event>
-        <cap:sent>2025-08-22T10:45:00-04:00</cap:sent>
-        <cap:effective>2025-08-22T10:45:00-04:00</cap:effective>
-        <cap:onset>2025-08-22T10:45:00-04:00</cap:onset>
-        <cap:expires>2025-08-22T18:45:00-04:00</cap:expires>
-        <cap:status>Actual</cap:status>
-        <cap:msgType>Update</cap:msgType>
-        <cap:category>Met</cap:category>
-        <cap:urgency>Expected</cap:urgency>
-        <cap:severity>Severe</cap:severity>
-        <cap:certainty>Likely</cap:certainty>
-        <cap:areaDesc>Anne Arundel</cap:areaDesc>
-        <cap:polygon/>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>024003</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>MDZ014</value>
-        </cap:geocode>
-        <cap:parameter>
-            <valueName>AWIPSidentifier</valueName>
-            <value>CFWLWX</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>WMOidentifier</valueName>
-            <value>WHUS41 KLWX 221445</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>NWSheadline</valueName>
-            <value>COASTAL FLOOD WARNING NOW IN EFFECT UNTIL 10 AM EDT SUNDAY... ...COASTAL FLOOD ADVISORY IS CANCELLED</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>EAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>NWEM</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>EAS-ORG</valueName>
-            <value>WXR</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>VTEC</valueName>
-            <value>/O.EXT.KLWX.CF.W.0004.000000T0000Z-250824T1400Z/</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>eventEndingTime</valueName>
-            <value>2025-08-24T10:00:00-04:00</value>
-        </cap:parameter>
-        <cap:scope>Public</cap:scope>
-        <cap:code>IPAWSv1.0</cap:code>
-        <cap:language>en-US</cap:language>
-        <cap:web>http://www.weather.gov</cap:web>
-        <cap:eventCode>
-            <valueName>SAME</valueName>
-            <value>CFW</value>
-        </cap:eventCode>
-        <cap:eventCode>
-            <valueName>NationalWeatherService</valueName>
-            <value>CFW</value>
-        </cap:eventCode>
-    </entry>
-    <entry>
         <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.327889df596f3ecfb577688c820dc362dd6b5ce3.006.1</id>
         <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.327889df596f3ecfb577688c820dc362dd6b5ce3.006.1.cap"/>
         <updated>2025-08-22T10:45:00-04:00</updated>
@@ -10137,6 +10676,108 @@ normal. The next high tide at Coltons Point is at 3:10 PM and
         <cap:parameter>
             <valueName>expiredReferences</valueName>
             <value>w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.bf4aeedb25bd8401cb37cf846add8036ae887d92.002.1,2025-08-22T01:33:00-04:00</value>
+        </cap:parameter>
+        <cap:scope>Public</cap:scope>
+        <cap:code>IPAWSv1.0</cap:code>
+        <cap:language>en-US</cap:language>
+        <cap:web>http://www.weather.gov</cap:web>
+        <cap:eventCode>
+            <valueName>SAME</valueName>
+            <value>NWS</value>
+        </cap:eventCode>
+        <cap:eventCode>
+            <valueName>NationalWeatherService</valueName>
+            <value>CFY</value>
+        </cap:eventCode>
+    </entry>
+    <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.327889df596f3ecfb577688c820dc362dd6b5ce3.005.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.327889df596f3ecfb577688c820dc362dd6b5ce3.005.1.cap"/>
+        <updated>2025-08-22T10:45:00-04:00</updated>
+        <published>2025-08-22T10:45:00-04:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>Coastal Flood Advisory issued August 22 at 10:45AM EDT until August 24 at 7:00PM EDT by NWS Baltimore MD/Washington DC</title>
+        <summary>* WHAT...One to two feet of inundation above ground level in low
+lying areas due to tidal flooding.
+
+* WHERE...Shoreline in the City of Alexandria and Arlington
+County.
+
+* WHEN...Until 7 PM EDT Sunday, especially around the time of
+high tide.
+
+* IMPACTS...Water is expected to approach the curb near the
+intersection of King Street and Strand Street in Alexandria..
+
+* ADDITIONAL DETAILS...Tides one and a half to two feet above
+normal. The next high tide at Alexandria is at 8:46 PM and 9:00
+AM Saturday.</summary>
+        <cap:event>Coastal Flood Advisory</cap:event>
+        <cap:sent>2025-08-22T10:45:00-04:00</cap:sent>
+        <cap:effective>2025-08-22T10:45:00-04:00</cap:effective>
+        <cap:onset>2025-08-22T10:45:00-04:00</cap:onset>
+        <cap:expires>2025-08-22T18:45:00-04:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Update</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Expected</cap:urgency>
+        <cap:severity>Minor</cap:severity>
+        <cap:certainty>Likely</cap:certainty>
+        <cap:areaDesc>Arlington/Falls Church/Alexandria</cap:areaDesc>
+        <cap:polygon/>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>051013</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>051510</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>051610</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>VAZ054</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>CFWLWX</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>WHUS41 KLWX 221445</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>NWSheadline</valueName>
+            <value>COASTAL FLOOD ADVISORY NOW IN EFFECT UNTIL 7 PM EDT SUNDAY</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>VTEC</valueName>
+            <value>/O.EXT.KLWX.CF.Y.0033.000000T0000Z-250824T2300Z/</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventEndingTime</valueName>
+            <value>2025-08-24T19:00:00-04:00</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>expiredReferences</valueName>
+            <value>w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.bf4aeedb25bd8401cb37cf846add8036ae887d92.001.1,2025-08-22T01:33:00-04:00</value>
         </cap:parameter>
         <cap:scope>Public</cap:scope>
         <cap:code>IPAWSv1.0</cap:code>
@@ -14346,104 +14987,6 @@ vehicles.</summary>
         </cap:eventCode>
     </entry>
     <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.77e570cf7c60d90ffdecfb4ad0c1aa83094f11e2.005.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.77e570cf7c60d90ffdecfb4ad0c1aa83094f11e2.005.1.cap"/>
-        <updated>2025-08-22T08:13:00-04:00</updated>
-        <published>2025-08-22T08:13:00-04:00</published>
-        <author>
-            <name>NWS</name>
-        </author>
-        <title>Coastal Flood Warning issued August 22 at 8:13AM EDT until August 23 at 1:00AM EDT by NWS Wakefield VA</title>
-        <summary>* WHAT...One to two feet of inundation above ground level in low-
-lying areas near shorelines and tidal waterways.
-
-* WHERE...Inland Worcester County.
-
-* WHEN...Until 1 AM EDT Saturday.
-
-* IMPACTS...Widespread flooding of vulnerable areas will result
-in an elevated threat of property damage to homes and businesses
-near the waterfront and shoreline. Water will be 1 to 2 feet
-above ground level in some areas resulting in a sufficient depth
-to close numerous roads and threaten homes and businesses.
-Flooding will extend inland from the waterfront along tidal
-rivers and bays resulting in some road closures and flooding of
-vehicles.</summary>
-        <cap:event>Coastal Flood Warning</cap:event>
-        <cap:sent>2025-08-22T08:13:00-04:00</cap:sent>
-        <cap:effective>2025-08-22T08:13:00-04:00</cap:effective>
-        <cap:onset>2025-08-22T08:13:00-04:00</cap:onset>
-        <cap:expires>2025-08-22T16:15:00-04:00</cap:expires>
-        <cap:status>Actual</cap:status>
-        <cap:msgType>Update</cap:msgType>
-        <cap:category>Met</cap:category>
-        <cap:urgency>Expected</cap:urgency>
-        <cap:severity>Severe</cap:severity>
-        <cap:certainty>Likely</cap:certainty>
-        <cap:areaDesc>Inland Worcester</cap:areaDesc>
-        <cap:polygon/>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>024047</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>MDZ024</value>
-        </cap:geocode>
-        <cap:parameter>
-            <valueName>AWIPSidentifier</valueName>
-            <value>CFWAKQ</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>WMOidentifier</valueName>
-            <value>WHUS41 KAKQ 221213</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>NWSheadline</valueName>
-            <value>COASTAL FLOOD WARNING REMAINS IN EFFECT UNTIL 1 AM EDT SATURDAY</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>EAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>NWEM</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>EAS-ORG</valueName>
-            <value>WXR</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>VTEC</valueName>
-            <value>/O.CON.KAKQ.CF.W.0002.000000T0000Z-250823T0500Z/</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>eventEndingTime</valueName>
-            <value>2025-08-23T01:00:00-04:00</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>expiredReferences</valueName>
-            <value>w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.ee333f532911a4cd322a341a2c21957ea36107d3.005.1,2025-08-21T22:46:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.5b3475d547a883fca43d115ae0ce0dc25366c058.006.1,2025-08-21T14:46:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.ccb7bb0d565cb41c8c4d13d5f6f3b0a3278c5c0d.002.1,2025-08-21T09:50:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.5bcb7787d5469aaeb494ac594247928dd4336ba1.005.2,2025-08-21T03:27:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.f9a89003cb0f210f6ec42df350ca6484d192499c.003.2,2025-08-20T21:35:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.3b54338f7544d191e681d22ad56555fd640082cb.004.2,2025-08-20T14:54:00-04:00</value>
-        </cap:parameter>
-        <cap:scope>Public</cap:scope>
-        <cap:code>IPAWSv1.0</cap:code>
-        <cap:language>en-US</cap:language>
-        <cap:web>http://www.weather.gov</cap:web>
-        <cap:eventCode>
-            <valueName>SAME</valueName>
-            <value>CFW</value>
-        </cap:eventCode>
-        <cap:eventCode>
-            <valueName>NationalWeatherService</valueName>
-            <value>CFW</value>
-        </cap:eventCode>
-    </entry>
-    <entry>
         <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.77e570cf7c60d90ffdecfb4ad0c1aa83094f11e2.001.2</id>
         <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.77e570cf7c60d90ffdecfb4ad0c1aa83094f11e2.001.2.cap"/>
         <updated>2025-08-22T08:13:00-04:00</updated>
@@ -14609,6 +15152,104 @@ vehicles.</summary>
         <cap:parameter>
             <valueName>eventEndingTime</valueName>
             <value>2025-08-23T03:00:00-04:00</value>
+        </cap:parameter>
+        <cap:scope>Public</cap:scope>
+        <cap:code>IPAWSv1.0</cap:code>
+        <cap:language>en-US</cap:language>
+        <cap:web>http://www.weather.gov</cap:web>
+        <cap:eventCode>
+            <valueName>SAME</valueName>
+            <value>CFW</value>
+        </cap:eventCode>
+        <cap:eventCode>
+            <valueName>NationalWeatherService</valueName>
+            <value>CFW</value>
+        </cap:eventCode>
+    </entry>
+    <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.77e570cf7c60d90ffdecfb4ad0c1aa83094f11e2.005.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.77e570cf7c60d90ffdecfb4ad0c1aa83094f11e2.005.1.cap"/>
+        <updated>2025-08-22T08:13:00-04:00</updated>
+        <published>2025-08-22T08:13:00-04:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>Coastal Flood Warning issued August 22 at 8:13AM EDT until August 23 at 1:00AM EDT by NWS Wakefield VA</title>
+        <summary>* WHAT...One to two feet of inundation above ground level in low-
+lying areas near shorelines and tidal waterways.
+
+* WHERE...Inland Worcester County.
+
+* WHEN...Until 1 AM EDT Saturday.
+
+* IMPACTS...Widespread flooding of vulnerable areas will result
+in an elevated threat of property damage to homes and businesses
+near the waterfront and shoreline. Water will be 1 to 2 feet
+above ground level in some areas resulting in a sufficient depth
+to close numerous roads and threaten homes and businesses.
+Flooding will extend inland from the waterfront along tidal
+rivers and bays resulting in some road closures and flooding of
+vehicles.</summary>
+        <cap:event>Coastal Flood Warning</cap:event>
+        <cap:sent>2025-08-22T08:13:00-04:00</cap:sent>
+        <cap:effective>2025-08-22T08:13:00-04:00</cap:effective>
+        <cap:onset>2025-08-22T08:13:00-04:00</cap:onset>
+        <cap:expires>2025-08-22T16:15:00-04:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Update</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Expected</cap:urgency>
+        <cap:severity>Severe</cap:severity>
+        <cap:certainty>Likely</cap:certainty>
+        <cap:areaDesc>Inland Worcester</cap:areaDesc>
+        <cap:polygon/>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>024047</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>MDZ024</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>CFWAKQ</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>WHUS41 KAKQ 221213</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>NWSheadline</valueName>
+            <value>COASTAL FLOOD WARNING REMAINS IN EFFECT UNTIL 1 AM EDT SATURDAY</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>EAS-ORG</valueName>
+            <value>WXR</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>VTEC</valueName>
+            <value>/O.CON.KAKQ.CF.W.0002.000000T0000Z-250823T0500Z/</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventEndingTime</valueName>
+            <value>2025-08-23T01:00:00-04:00</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>expiredReferences</valueName>
+            <value>w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.ee333f532911a4cd322a341a2c21957ea36107d3.005.1,2025-08-21T22:46:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.5b3475d547a883fca43d115ae0ce0dc25366c058.006.1,2025-08-21T14:46:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.ccb7bb0d565cb41c8c4d13d5f6f3b0a3278c5c0d.002.1,2025-08-21T09:50:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.5bcb7787d5469aaeb494ac594247928dd4336ba1.005.2,2025-08-21T03:27:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.f9a89003cb0f210f6ec42df350ca6484d192499c.003.2,2025-08-20T21:35:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.3b54338f7544d191e681d22ad56555fd640082cb.004.2,2025-08-20T14:54:00-04:00</value>
         </cap:parameter>
         <cap:scope>Public</cap:scope>
         <cap:code>IPAWSv1.0</cap:code>
@@ -18104,298 +18745,6 @@ certain to contain a mix of saltwater.</summary>
         </cap:eventCode>
     </entry>
     <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c7af60b626c07ad3d6b28ddc7e4fca4d0ba7736f.001.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c7af60b626c07ad3d6b28ddc7e4fca4d0ba7736f.001.1.cap"/>
-        <updated>2025-08-22T07:13:00-04:00</updated>
-        <published>2025-08-22T07:13:00-04:00</published>
-        <author>
-            <name>NWS</name>
-        </author>
-        <title>Flood Watch issued August 22 at 7:13AM EDT until August 24 at 2:00AM EDT by NWS Charleston SC</title>
-        <summary>* WHAT...Flash flooding caused by excessive rainfall continues to be
-possible.
-
-* WHERE...Portions of southeast Georgia, including the following
-areas, Bulloch, Candler, Coastal Bryan, Coastal Chatham, Coastal
-Liberty, Coastal McIntosh, Effingham, Evans, Inland Bryan, Inland
-Chatham, Inland Liberty, Inland McIntosh, Jenkins, Long, Screven
-and Tattnall and southeast South Carolina, including the following
-areas, Allendale, Beaufort, Charleston, Coastal Colleton, Coastal
-Jasper, Dorchester, Hampton, Inland Berkeley, Inland Colleton,
-Inland Jasper and Tidal Berkeley.
-
-* WHEN...Through late Saturday night.
-
-* IMPACTS...Excessive runoff may result in flooding of rivers,
-creeks, streams, and other low-lying and flood-prone locations.
-Creeks and streams may rise out of their banks. Flooding may occur
-in poor drainage and urban areas. Storm drains and ditches may
-become clogged with debris. Extensive street flooding and flooding
-of creeks and rivers are possible.
-
-* ADDITIONAL DETAILS...
-- Numerous to widespread showers and thunderstorms will impact
-the region Friday through Saturday. Rainfall amounts of 2 to
-4 inches can be expected through early Sunday morning with
-localized amounts exceeding 6 inches. Ground conditions
-remain wet and any sustained period of heavy rainfall will
-likely lead to areas of flash flooding.
-- http://www.weather.gov/safety/flood</summary>
-        <cap:event>Flood Watch</cap:event>
-        <cap:sent>2025-08-22T07:13:00-04:00</cap:sent>
-        <cap:effective>2025-08-22T07:13:00-04:00</cap:effective>
-        <cap:onset>2025-08-22T08:00:00-04:00</cap:onset>
-        <cap:expires>2025-08-22T15:15:00-04:00</cap:expires>
-        <cap:status>Actual</cap:status>
-        <cap:msgType>Update</cap:msgType>
-        <cap:category>Met</cap:category>
-        <cap:urgency>Future</cap:urgency>
-        <cap:severity>Severe</cap:severity>
-        <cap:certainty>Possible</cap:certainty>
-        <cap:areaDesc>Jenkins; Screven; Candler; Bulloch; Effingham; Tattnall; Evans; Inland Bryan; Coastal Bryan; Inland Chatham; Coastal Chatham; Long; Inland Liberty; Coastal Liberty; Inland McIntosh; Coastal McIntosh; Allendale; Hampton; Inland Colleton; Dorchester; Inland Berkeley; Inland Jasper; Beaufort; Coastal Colleton; Charleston; Coastal Jasper; Tidal Berkeley</cap:areaDesc>
-        <cap:polygon/>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>013165</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>013251</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>013043</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>013031</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>013103</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>013267</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>013109</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>013029</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>013051</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>013183</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>013179</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>013191</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>045005</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>045049</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>045029</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>045035</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>045015</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>045053</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>045013</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>045019</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>GAZ087</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>GAZ088</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>GAZ099</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>GAZ100</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>GAZ101</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>GAZ114</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>GAZ115</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>GAZ116</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>GAZ117</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>GAZ118</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>GAZ119</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>GAZ137</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>GAZ138</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>GAZ139</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>GAZ140</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>GAZ141</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>SCZ040</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>SCZ042</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>SCZ043</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>SCZ044</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>SCZ045</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>SCZ047</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>SCZ048</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>SCZ049</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>SCZ050</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>SCZ051</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>SCZ052</value>
-        </cap:geocode>
-        <cap:parameter>
-            <valueName>AWIPSidentifier</valueName>
-            <value>FFACHS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>WMOidentifier</valueName>
-            <value>WGUS62 KCHS 221113</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>NWSheadline</valueName>
-            <value>FLOOD WATCH REMAINS IN EFFECT THROUGH LATE SATURDAY NIGHT</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>EAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>NWEM</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>EAS-ORG</valueName>
-            <value>WXR</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>VTEC</valueName>
-            <value>/O.CON.KCHS.FA.A.0002.250822T1200Z-250824T0600Z/</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>eventEndingTime</valueName>
-            <value>2025-08-24T02:00:00-04:00</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>expiredReferences</valueName>
-            <value>w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.d9bdcadcd174fb8c4c9d0a2679fda095d0203d7e.001.1,2025-08-21T20:31:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.fb8f7227b478f66ebcb6fd95a16b7f4e6ceee957.001.1,2025-08-21T13:02:00-04:00</value>
-        </cap:parameter>
-        <cap:scope>Public</cap:scope>
-        <cap:code>IPAWSv1.0</cap:code>
-        <cap:language>en-US</cap:language>
-        <cap:web>http://www.weather.gov</cap:web>
-        <cap:eventCode>
-            <valueName>SAME</valueName>
-            <value>FFA</value>
-        </cap:eventCode>
-        <cap:eventCode>
-            <valueName>NationalWeatherService</valueName>
-            <value>FAA</value>
-        </cap:eventCode>
-    </entry>
-    <entry>
         <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.55b03a8ee4f805204e71c56fe6e994b408661c98.006.1</id>
         <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.55b03a8ee4f805204e71c56fe6e994b408661c98.006.1.cap"/>
         <updated>2025-08-22T03:36:00-07:00</updated>
@@ -18961,102 +19310,6 @@ Empire.
         <cap:eventCode>
             <valueName>NationalWeatherService</valueName>
             <value>HTY</value>
-        </cap:eventCode>
-    </entry>
-    <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b7f105c0c195cda043244f628c3fd3bcd0510030.001.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b7f105c0c195cda043244f628c3fd3bcd0510030.001.1.cap"/>
-        <updated>2025-08-22T06:35:00-04:00</updated>
-        <published>2025-08-22T06:35:00-04:00</published>
-        <author>
-            <name>NWS</name>
-        </author>
-        <title>Coastal Flood Advisory issued August 22 at 6:35AM EDT until August 22 at 11:00PM EDT by NWS Charleston SC</title>
-        <summary>* WHAT...Up to one half foot of inundation above ground level
-expected along shorelines and tidal waterways (7.3 to 7.5 feet
-Mean Lower Low Water at Charleston).
-
-* WHERE...Coastal Colleton and Charleston Counties.
-
-* WHEN...From 7 PM to 11 PM EDT this evening.
-
-* IMPACTS...This could result in some roads becoming impassable.
-
-* ADDITIONAL DETAILS...High tide will occur around 8:30 PM this
-evening at Charleston. Saltwater inundation will be possible 1
-to 2 hours before and after high tide.</summary>
-        <cap:event>Coastal Flood Advisory</cap:event>
-        <cap:sent>2025-08-22T06:35:00-04:00</cap:sent>
-        <cap:effective>2025-08-22T06:35:00-04:00</cap:effective>
-        <cap:onset>2025-08-22T19:00:00-04:00</cap:onset>
-        <cap:expires>2025-08-22T14:45:00-04:00</cap:expires>
-        <cap:status>Actual</cap:status>
-        <cap:msgType>Alert</cap:msgType>
-        <cap:category>Met</cap:category>
-        <cap:urgency>Expected</cap:urgency>
-        <cap:severity>Minor</cap:severity>
-        <cap:certainty>Likely</cap:certainty>
-        <cap:areaDesc>Coastal Colleton; Charleston</cap:areaDesc>
-        <cap:polygon/>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>045029</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>045019</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>SCZ049</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>SCZ050</value>
-        </cap:geocode>
-        <cap:parameter>
-            <valueName>AWIPSidentifier</valueName>
-            <value>CFWCHS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>WMOidentifier</valueName>
-            <value>WHUS42 KCHS 221035</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>NWSheadline</valueName>
-            <value>COASTAL FLOOD ADVISORY IN EFFECT FROM 7 PM TO 11 PM EDT THIS EVENING</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>EAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>NWEM</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>VTEC</valueName>
-            <value>/O.NEW.KCHS.CF.Y.0014.250822T2300Z-250823T0300Z/</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>eventEndingTime</valueName>
-            <value>2025-08-22T23:00:00-04:00</value>
-        </cap:parameter>
-        <cap:scope>Public</cap:scope>
-        <cap:code>IPAWSv1.0</cap:code>
-        <cap:language>en-US</cap:language>
-        <cap:web>http://www.weather.gov</cap:web>
-        <cap:eventCode>
-            <valueName>SAME</valueName>
-            <value>NWS</value>
-        </cap:eventCode>
-        <cap:eventCode>
-            <valueName>NationalWeatherService</valueName>
-            <value>CFY</value>
         </cap:eventCode>
     </entry>
     <entry>
@@ -21069,6 +21322,97 @@ during the Fri morning high tide.</summary>
         </cap:eventCode>
     </entry>
     <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ea1f8fcb9f373cad15e249c334fadef7125dcd31.008.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ea1f8fcb9f373cad15e249c334fadef7125dcd31.008.1.cap"/>
+        <updated>2025-08-22T05:28:00-04:00</updated>
+        <published>2025-08-22T05:28:00-04:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>Coastal Flood Statement issued August 22 at 5:28AM EDT until August 22 at 9:00PM EDT by NWS Upton NY</title>
+        <summary>* WHAT...Up to one half foot of inundation above ground level
+expected in vulnerable areas near the waterfront and shoreline.
+
+* WHERE...New York (Manhattan) County.
+
+* WHEN...This evening.
+
+* IMPACTS...Brief minor flooding of the more vulnerable
+locations near the waterfront and shoreline.
+
+* COASTAL FLOOD IMPACTS...Minor flooding is expected in the most
+vulnerable locations near the waterfront and shoreline. Expect
+up to one half foot of inundation above ground level in low
+lying, vulnerable areas. Some roads and low lying property
+including parking lots, parks, lawns and homes/businesses with
+basements near the waterfront will experience shallow flooding.</summary>
+        <cap:event>Coastal Flood Statement</cap:event>
+        <cap:sent>2025-08-22T05:28:00-04:00</cap:sent>
+        <cap:effective>2025-08-22T05:28:00-04:00</cap:effective>
+        <cap:onset>2025-08-22T18:00:00-04:00</cap:onset>
+        <cap:expires>2025-08-22T15:00:00-04:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Update</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Expected</cap:urgency>
+        <cap:severity>Minor</cap:severity>
+        <cap:certainty>Likely</cap:certainty>
+        <cap:areaDesc>New York (Manhattan)</cap:areaDesc>
+        <cap:polygon/>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>036061</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>NYZ072</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>CFWOKX</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>WHUS41 KOKX 220928 AAA</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>NWSheadline</valueName>
+            <value>COASTAL FLOOD STATEMENT REMAINS IN EFFECT THIS EVENING</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>VTEC</valueName>
+            <value>/O.CON.KOKX.CF.S.0016.250822T2200Z-250823T0100Z/</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventEndingTime</valueName>
+            <value>2025-08-22T21:00:00-04:00</value>
+        </cap:parameter>
+        <cap:scope>Public</cap:scope>
+        <cap:code>IPAWSv1.0</cap:code>
+        <cap:language>en-US</cap:language>
+        <cap:web>http://www.weather.gov</cap:web>
+        <cap:eventCode>
+            <valueName>SAME</valueName>
+            <value>NWS</value>
+        </cap:eventCode>
+        <cap:eventCode>
+            <valueName>NationalWeatherService</valueName>
+            <value>CFS</value>
+        </cap:eventCode>
+    </entry>
+    <entry>
         <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ea1f8fcb9f373cad15e249c334fadef7125dcd31.007.1</id>
         <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ea1f8fcb9f373cad15e249c334fadef7125dcd31.007.1.cap"/>
         <updated>2025-08-22T05:28:00-04:00</updated>
@@ -21167,97 +21511,6 @@ near the waterfront will experience shallow flooding.</summary>
         <cap:eventCode>
             <valueName>NationalWeatherService</valueName>
             <value>CFY</value>
-        </cap:eventCode>
-    </entry>
-    <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ea1f8fcb9f373cad15e249c334fadef7125dcd31.008.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ea1f8fcb9f373cad15e249c334fadef7125dcd31.008.1.cap"/>
-        <updated>2025-08-22T05:28:00-04:00</updated>
-        <published>2025-08-22T05:28:00-04:00</published>
-        <author>
-            <name>NWS</name>
-        </author>
-        <title>Coastal Flood Statement issued August 22 at 5:28AM EDT until August 22 at 9:00PM EDT by NWS Upton NY</title>
-        <summary>* WHAT...Up to one half foot of inundation above ground level
-expected in vulnerable areas near the waterfront and shoreline.
-
-* WHERE...New York (Manhattan) County.
-
-* WHEN...This evening.
-
-* IMPACTS...Brief minor flooding of the more vulnerable
-locations near the waterfront and shoreline.
-
-* COASTAL FLOOD IMPACTS...Minor flooding is expected in the most
-vulnerable locations near the waterfront and shoreline. Expect
-up to one half foot of inundation above ground level in low
-lying, vulnerable areas. Some roads and low lying property
-including parking lots, parks, lawns and homes/businesses with
-basements near the waterfront will experience shallow flooding.</summary>
-        <cap:event>Coastal Flood Statement</cap:event>
-        <cap:sent>2025-08-22T05:28:00-04:00</cap:sent>
-        <cap:effective>2025-08-22T05:28:00-04:00</cap:effective>
-        <cap:onset>2025-08-22T18:00:00-04:00</cap:onset>
-        <cap:expires>2025-08-22T15:00:00-04:00</cap:expires>
-        <cap:status>Actual</cap:status>
-        <cap:msgType>Update</cap:msgType>
-        <cap:category>Met</cap:category>
-        <cap:urgency>Expected</cap:urgency>
-        <cap:severity>Minor</cap:severity>
-        <cap:certainty>Likely</cap:certainty>
-        <cap:areaDesc>New York (Manhattan)</cap:areaDesc>
-        <cap:polygon/>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>036061</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>NYZ072</value>
-        </cap:geocode>
-        <cap:parameter>
-            <valueName>AWIPSidentifier</valueName>
-            <value>CFWOKX</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>WMOidentifier</valueName>
-            <value>WHUS41 KOKX 220928 AAA</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>NWSheadline</valueName>
-            <value>COASTAL FLOOD STATEMENT REMAINS IN EFFECT THIS EVENING</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>EAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>NWEM</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>VTEC</valueName>
-            <value>/O.CON.KOKX.CF.S.0016.250822T2200Z-250823T0100Z/</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>eventEndingTime</valueName>
-            <value>2025-08-22T21:00:00-04:00</value>
-        </cap:parameter>
-        <cap:scope>Public</cap:scope>
-        <cap:code>IPAWSv1.0</cap:code>
-        <cap:language>en-US</cap:language>
-        <cap:web>http://www.weather.gov</cap:web>
-        <cap:eventCode>
-            <valueName>SAME</valueName>
-            <value>NWS</value>
-        </cap:eventCode>
-        <cap:eventCode>
-            <valueName>NationalWeatherService</valueName>
-            <value>CFS</value>
         </cap:eventCode>
     </entry>
     <entry>
@@ -22780,235 +23033,6 @@ from shore into deeper water.</summary>
         </cap:eventCode>
     </entry>
     <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6bffdc8d884eb02d82908ee8977ffcf6ad095e0d.010.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6bffdc8d884eb02d82908ee8977ffcf6ad095e0d.010.1.cap"/>
-        <updated>2025-08-22T04:52:00-04:00</updated>
-        <published>2025-08-22T04:52:00-04:00</published>
-        <author>
-            <name>NWS</name>
-        </author>
-        <title>Coastal Flood Advisory issued August 22 at 4:52AM EDT until August 23 at 5:00AM EDT by NWS Mount Holly NJ</title>
-        <summary>* WHAT...Up to one foot of inundation above ground level in low-
-lying areas near shorelines and tidal waterways.
-
-* WHERE...In New Jersey, Gloucester, Camden and Northwestern
-Burlington. In Pennsylvania, Delaware, Philadelphia and Lower
-Bucks.
-
-* WHEN...Until 5 AM EDT Saturday.
-
-* IMPACTS...At this level, flooding begins on the most
-vulnerable roads along tidal waterways. Some partial or full
-road closures are possible.</summary>
-        <cap:event>Coastal Flood Advisory</cap:event>
-        <cap:sent>2025-08-22T04:52:00-04:00</cap:sent>
-        <cap:effective>2025-08-22T04:52:00-04:00</cap:effective>
-        <cap:onset>2025-08-22T04:52:00-04:00</cap:onset>
-        <cap:expires>2025-08-22T18:00:00-04:00</cap:expires>
-        <cap:status>Actual</cap:status>
-        <cap:msgType>Update</cap:msgType>
-        <cap:category>Met</cap:category>
-        <cap:urgency>Expected</cap:urgency>
-        <cap:severity>Minor</cap:severity>
-        <cap:certainty>Likely</cap:certainty>
-        <cap:areaDesc>Gloucester; Camden; Northwestern Burlington; Delaware; Philadelphia; Lower Bucks</cap:areaDesc>
-        <cap:polygon/>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>034015</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>034007</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>034005</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>042045</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>042101</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>042017</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>NJZ017</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>NJZ018</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>NJZ019</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>PAZ070</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>PAZ071</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>PAZ106</value>
-        </cap:geocode>
-        <cap:parameter>
-            <valueName>AWIPSidentifier</valueName>
-            <value>CFWPHI</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>WMOidentifier</valueName>
-            <value>WHUS41 KPHI 220852</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>NWSheadline</valueName>
-            <value>COASTAL FLOOD ADVISORY REMAINS IN EFFECT UNTIL 5 AM EDT SATURDAY</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>EAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>NWEM</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>VTEC</valueName>
-            <value>/O.CON.KPHI.CF.Y.0019.000000T0000Z-250823T0900Z/</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>eventEndingTime</valueName>
-            <value>2025-08-23T05:00:00-04:00</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>expiredReferences</valueName>
-            <value>w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.cfc57e57fc873394ed95640a19bb7dbace6c9f20.011.1,2025-08-21T15:20:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.90dff04a42250ecb2eeb326839f8b01da4ba909b.011.1,2025-08-21T05:31:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.76a152abfa6ac892991a6ae0c5be65c397b3c91e.011.1,2025-08-20T16:15:00-04:00</value>
-        </cap:parameter>
-        <cap:scope>Public</cap:scope>
-        <cap:code>IPAWSv1.0</cap:code>
-        <cap:language>en-US</cap:language>
-        <cap:web>http://www.weather.gov</cap:web>
-        <cap:eventCode>
-            <valueName>SAME</valueName>
-            <value>NWS</value>
-        </cap:eventCode>
-        <cap:eventCode>
-            <valueName>NationalWeatherService</valueName>
-            <value>CFY</value>
-        </cap:eventCode>
-    </entry>
-    <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6bffdc8d884eb02d82908ee8977ffcf6ad095e0d.001.2</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6bffdc8d884eb02d82908ee8977ffcf6ad095e0d.001.2.cap"/>
-        <updated>2025-08-22T04:52:00-04:00</updated>
-        <published>2025-08-22T04:52:00-04:00</published>
-        <author>
-            <name>NWS</name>
-        </author>
-        <title>High Surf Advisory issued August 22 at 4:52AM EDT until August 22 at 8:00PM EDT by NWS Mount Holly NJ</title>
-        <summary>* WHAT...For the Coastal Flood Warning, one to two feet of
-inundation above ground level in low-lying areas near
-shorelines and tidal waterways. For the High Surf Advisory,
-large breaking waves of up to 5 feet in the surf zone. For the
-High Rip Current Risk, dangerous rip currents.
-
-* WHERE...Coastal Ocean.
-
-* WHEN...For the Coastal Flood Warning, until 2 AM EDT Saturday.
-For the High Surf Advisory, until 8 PM EDT this evening. For
-the High Rip Current Risk, through Saturday evening.
-
-* IMPACTS...At this level, widespread roadway flooding occurs in
-coastal and bayside communities and along inland tidal
-waterways. Many roads become impassable. Some damage to
-vulnerable structures may begin to occur. Dangerous swimming
-and surfing conditions and localized beach erosion. Rip
-currents can sweep even the best swimmers away from shore into
-deeper water.</summary>
-        <cap:event>High Surf Advisory</cap:event>
-        <cap:sent>2025-08-22T04:52:00-04:00</cap:sent>
-        <cap:effective>2025-08-22T04:52:00-04:00</cap:effective>
-        <cap:onset>2025-08-22T04:52:00-04:00</cap:onset>
-        <cap:expires>2025-08-22T18:00:00-04:00</cap:expires>
-        <cap:status>Actual</cap:status>
-        <cap:msgType>Update</cap:msgType>
-        <cap:category>Met</cap:category>
-        <cap:urgency>Expected</cap:urgency>
-        <cap:severity>Minor</cap:severity>
-        <cap:certainty>Likely</cap:certainty>
-        <cap:areaDesc>Coastal Ocean</cap:areaDesc>
-        <cap:polygon/>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>034029</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>NJZ026</value>
-        </cap:geocode>
-        <cap:parameter>
-            <valueName>AWIPSidentifier</valueName>
-            <value>CFWPHI</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>WMOidentifier</valueName>
-            <value>WHUS41 KPHI 220852</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>NWSheadline</valueName>
-            <value>COASTAL FLOOD WARNING REMAINS IN EFFECT UNTIL 2 AM EDT SATURDAY... ...HIGH SURF ADVISORY REMAINS IN EFFECT UNTIL 8 PM EDT THIS EVENING... ...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH SATURDAY EVENING</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>EAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>NWEM</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>VTEC</valueName>
-            <value>/O.CON.KPHI.SU.Y.0001.000000T0000Z-250823T0000Z/</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>eventEndingTime</valueName>
-            <value>2025-08-22T20:00:00-04:00</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>expiredReferences</valueName>
-            <value>w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.cfc57e57fc873394ed95640a19bb7dbace6c9f20.002.3,2025-08-21T15:20:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.90dff04a42250ecb2eeb326839f8b01da4ba909b.001.2,2025-08-21T05:31:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.76a152abfa6ac892991a6ae0c5be65c397b3c91e.002.3,2025-08-20T16:15:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.7c4318adca78971ba65aab710f318caf966b5bb6.006.1,2025-08-20T06:26:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.7b203a4196d11f52e82673e0283fccdc4677f565.006.1,2025-08-19T21:56:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.526e197fe12f535884c61b90ecf3d6a09bd01cf1.006.1,2025-08-19T17:13:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.54e3bae95446ef4fecd277d06353a50606037eaa.006.3,2025-08-19T16:02:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.1bcfc3afa644138a4bf2d1649f17d975ec80ed8c.004.1,2025-08-19T11:10:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.578795e89fe7fc98967ac39287f1583c31d6a460.001.1,2025-08-19T03:09:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.39e97746c5511398de67e0090a63f2be1871ea36.001.1,2025-08-19T02:53:00-04:00</value>
-        </cap:parameter>
-        <cap:scope>Public</cap:scope>
-        <cap:code>IPAWSv1.0</cap:code>
-        <cap:language>en-US</cap:language>
-        <cap:web>http://www.weather.gov</cap:web>
-        <cap:eventCode>
-            <valueName>SAME</valueName>
-            <value>NWS</value>
-        </cap:eventCode>
-        <cap:eventCode>
-            <valueName>NationalWeatherService</valueName>
-            <value>SUY</value>
-        </cap:eventCode>
-    </entry>
-    <entry>
         <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6bffdc8d884eb02d82908ee8977ffcf6ad095e0d.009.3</id>
         <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6bffdc8d884eb02d82908ee8977ffcf6ad095e0d.009.3.cap"/>
         <updated>2025-08-22T04:52:00-04:00</updated>
@@ -23202,6 +23226,235 @@ deeper water.</summary>
         <cap:eventCode>
             <valueName>NationalWeatherService</valueName>
             <value>RPS</value>
+        </cap:eventCode>
+    </entry>
+    <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6bffdc8d884eb02d82908ee8977ffcf6ad095e0d.001.2</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6bffdc8d884eb02d82908ee8977ffcf6ad095e0d.001.2.cap"/>
+        <updated>2025-08-22T04:52:00-04:00</updated>
+        <published>2025-08-22T04:52:00-04:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>High Surf Advisory issued August 22 at 4:52AM EDT until August 22 at 8:00PM EDT by NWS Mount Holly NJ</title>
+        <summary>* WHAT...For the Coastal Flood Warning, one to two feet of
+inundation above ground level in low-lying areas near
+shorelines and tidal waterways. For the High Surf Advisory,
+large breaking waves of up to 5 feet in the surf zone. For the
+High Rip Current Risk, dangerous rip currents.
+
+* WHERE...Coastal Ocean.
+
+* WHEN...For the Coastal Flood Warning, until 2 AM EDT Saturday.
+For the High Surf Advisory, until 8 PM EDT this evening. For
+the High Rip Current Risk, through Saturday evening.
+
+* IMPACTS...At this level, widespread roadway flooding occurs in
+coastal and bayside communities and along inland tidal
+waterways. Many roads become impassable. Some damage to
+vulnerable structures may begin to occur. Dangerous swimming
+and surfing conditions and localized beach erosion. Rip
+currents can sweep even the best swimmers away from shore into
+deeper water.</summary>
+        <cap:event>High Surf Advisory</cap:event>
+        <cap:sent>2025-08-22T04:52:00-04:00</cap:sent>
+        <cap:effective>2025-08-22T04:52:00-04:00</cap:effective>
+        <cap:onset>2025-08-22T04:52:00-04:00</cap:onset>
+        <cap:expires>2025-08-22T18:00:00-04:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Update</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Expected</cap:urgency>
+        <cap:severity>Minor</cap:severity>
+        <cap:certainty>Likely</cap:certainty>
+        <cap:areaDesc>Coastal Ocean</cap:areaDesc>
+        <cap:polygon/>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>034029</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>NJZ026</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>CFWPHI</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>WHUS41 KPHI 220852</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>NWSheadline</valueName>
+            <value>COASTAL FLOOD WARNING REMAINS IN EFFECT UNTIL 2 AM EDT SATURDAY... ...HIGH SURF ADVISORY REMAINS IN EFFECT UNTIL 8 PM EDT THIS EVENING... ...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH SATURDAY EVENING</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>VTEC</valueName>
+            <value>/O.CON.KPHI.SU.Y.0001.000000T0000Z-250823T0000Z/</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventEndingTime</valueName>
+            <value>2025-08-22T20:00:00-04:00</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>expiredReferences</valueName>
+            <value>w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.cfc57e57fc873394ed95640a19bb7dbace6c9f20.002.3,2025-08-21T15:20:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.90dff04a42250ecb2eeb326839f8b01da4ba909b.001.2,2025-08-21T05:31:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.76a152abfa6ac892991a6ae0c5be65c397b3c91e.002.3,2025-08-20T16:15:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.7c4318adca78971ba65aab710f318caf966b5bb6.006.1,2025-08-20T06:26:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.7b203a4196d11f52e82673e0283fccdc4677f565.006.1,2025-08-19T21:56:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.526e197fe12f535884c61b90ecf3d6a09bd01cf1.006.1,2025-08-19T17:13:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.54e3bae95446ef4fecd277d06353a50606037eaa.006.3,2025-08-19T16:02:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.1bcfc3afa644138a4bf2d1649f17d975ec80ed8c.004.1,2025-08-19T11:10:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.578795e89fe7fc98967ac39287f1583c31d6a460.001.1,2025-08-19T03:09:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.39e97746c5511398de67e0090a63f2be1871ea36.001.1,2025-08-19T02:53:00-04:00</value>
+        </cap:parameter>
+        <cap:scope>Public</cap:scope>
+        <cap:code>IPAWSv1.0</cap:code>
+        <cap:language>en-US</cap:language>
+        <cap:web>http://www.weather.gov</cap:web>
+        <cap:eventCode>
+            <valueName>SAME</valueName>
+            <value>NWS</value>
+        </cap:eventCode>
+        <cap:eventCode>
+            <valueName>NationalWeatherService</valueName>
+            <value>SUY</value>
+        </cap:eventCode>
+    </entry>
+    <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6bffdc8d884eb02d82908ee8977ffcf6ad095e0d.010.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6bffdc8d884eb02d82908ee8977ffcf6ad095e0d.010.1.cap"/>
+        <updated>2025-08-22T04:52:00-04:00</updated>
+        <published>2025-08-22T04:52:00-04:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>Coastal Flood Advisory issued August 22 at 4:52AM EDT until August 23 at 5:00AM EDT by NWS Mount Holly NJ</title>
+        <summary>* WHAT...Up to one foot of inundation above ground level in low-
+lying areas near shorelines and tidal waterways.
+
+* WHERE...In New Jersey, Gloucester, Camden and Northwestern
+Burlington. In Pennsylvania, Delaware, Philadelphia and Lower
+Bucks.
+
+* WHEN...Until 5 AM EDT Saturday.
+
+* IMPACTS...At this level, flooding begins on the most
+vulnerable roads along tidal waterways. Some partial or full
+road closures are possible.</summary>
+        <cap:event>Coastal Flood Advisory</cap:event>
+        <cap:sent>2025-08-22T04:52:00-04:00</cap:sent>
+        <cap:effective>2025-08-22T04:52:00-04:00</cap:effective>
+        <cap:onset>2025-08-22T04:52:00-04:00</cap:onset>
+        <cap:expires>2025-08-22T18:00:00-04:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Update</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Expected</cap:urgency>
+        <cap:severity>Minor</cap:severity>
+        <cap:certainty>Likely</cap:certainty>
+        <cap:areaDesc>Gloucester; Camden; Northwestern Burlington; Delaware; Philadelphia; Lower Bucks</cap:areaDesc>
+        <cap:polygon/>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>034015</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>034007</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>034005</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>042045</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>042101</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>042017</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>NJZ017</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>NJZ018</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>NJZ019</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>PAZ070</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>PAZ071</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>PAZ106</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>CFWPHI</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>WHUS41 KPHI 220852</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>NWSheadline</valueName>
+            <value>COASTAL FLOOD ADVISORY REMAINS IN EFFECT UNTIL 5 AM EDT SATURDAY</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>VTEC</valueName>
+            <value>/O.CON.KPHI.CF.Y.0019.000000T0000Z-250823T0900Z/</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventEndingTime</valueName>
+            <value>2025-08-23T05:00:00-04:00</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>expiredReferences</valueName>
+            <value>w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.cfc57e57fc873394ed95640a19bb7dbace6c9f20.011.1,2025-08-21T15:20:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.90dff04a42250ecb2eeb326839f8b01da4ba909b.011.1,2025-08-21T05:31:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.76a152abfa6ac892991a6ae0c5be65c397b3c91e.011.1,2025-08-20T16:15:00-04:00</value>
+        </cap:parameter>
+        <cap:scope>Public</cap:scope>
+        <cap:code>IPAWSv1.0</cap:code>
+        <cap:language>en-US</cap:language>
+        <cap:web>http://www.weather.gov</cap:web>
+        <cap:eventCode>
+            <valueName>SAME</valueName>
+            <value>NWS</value>
+        </cap:eventCode>
+        <cap:eventCode>
+            <valueName>NationalWeatherService</valueName>
+            <value>CFY</value>
         </cap:eventCode>
     </entry>
     <entry>
@@ -27137,95 +27390,6 @@ capsize or damage vessels and reduce visibility.</summary>
         </cap:eventCode>
     </entry>
     <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b7dc52635c5ddb7bd392f44bee382f8802dc46ff.006.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b7dc52635c5ddb7bd392f44bee382f8802dc46ff.006.1.cap"/>
-        <updated>2025-08-22T02:23:00-04:00</updated>
-        <published>2025-08-22T02:23:00-04:00</published>
-        <author>
-            <name>NWS</name>
-        </author>
-        <title>Gale Warning issued August 22 at 2:23AM EDT until August 22 at 8:00PM EDT by NWS Boston/Norton MA</title>
-        <summary>* WHAT...Northeast winds 15 to 25 kt with gusts up to 35 kt and
-seas 6 to 11 feet.
-
-* WHERE...Coastal waters east of Ipswich Bay and the Stellwagen
-Bank National Marine Sanctuary.
-
-* WHEN...Until 8 PM EDT this evening.
-
-* IMPACTS...Strong winds will cause hazardous seas which could
-capsize or damage vessels and reduce visibility.</summary>
-        <cap:event>Gale Warning</cap:event>
-        <cap:sent>2025-08-22T02:23:00-04:00</cap:sent>
-        <cap:effective>2025-08-22T02:23:00-04:00</cap:effective>
-        <cap:onset>2025-08-22T02:23:00-04:00</cap:onset>
-        <cap:expires>2025-08-22T16:00:00-04:00</cap:expires>
-        <cap:status>Actual</cap:status>
-        <cap:msgType>Update</cap:msgType>
-        <cap:category>Met</cap:category>
-        <cap:urgency>Expected</cap:urgency>
-        <cap:severity>Moderate</cap:severity>
-        <cap:certainty>Likely</cap:certainty>
-        <cap:areaDesc>Coastal waters east of Ipswich Bay and the Stellwagen Bank National Marine Sanctuary</cap:areaDesc>
-        <cap:polygon/>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>073250</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>ANZ250</value>
-        </cap:geocode>
-        <cap:parameter>
-            <valueName>AWIPSidentifier</valueName>
-            <value>MWWBOX</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>WMOidentifier</valueName>
-            <value>WHUS71 KBOX 220623</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>NWSheadline</valueName>
-            <value>GALE WARNING REMAINS IN EFFECT UNTIL 8 PM EDT THIS EVENING</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>EAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>NWEM</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>VTEC</valueName>
-            <value>/O.CON.KBOX.GL.W.0026.000000T0000Z-250823T0000Z/</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>eventEndingTime</valueName>
-            <value>2025-08-22T20:00:00-04:00</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>expiredReferences</valueName>
-            <value>w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.2c13405589ef59fefc8928f688e1a0ced0aae7ec.006.1,2025-08-21T02:14:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.ea287a2c8571c1a42d6eaf21d0d6614c41eabcb0.006.1,2025-08-20T14:31:00-04:00</value>
-        </cap:parameter>
-        <cap:scope>Public</cap:scope>
-        <cap:code>IPAWSv1.0</cap:code>
-        <cap:language>en-US</cap:language>
-        <cap:web>http://www.weather.gov</cap:web>
-        <cap:eventCode>
-            <valueName>SAME</valueName>
-            <value>NWS</value>
-        </cap:eventCode>
-        <cap:eventCode>
-            <valueName>NationalWeatherService</valueName>
-            <value>GLW</value>
-        </cap:eventCode>
-    </entry>
-    <entry>
         <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b7dc52635c5ddb7bd392f44bee382f8802dc46ff.002.1</id>
         <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b7dc52635c5ddb7bd392f44bee382f8802dc46ff.002.1.cap"/>
         <updated>2025-08-22T02:23:00-04:00</updated>
@@ -27325,6 +27489,95 @@ capsize or damage vessels and reduce visibility.</summary>
         <cap:parameter>
             <valueName>expiredReferences</valueName>
             <value>w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.2c13405589ef59fefc8928f688e1a0ced0aae7ec.002.1,2025-08-21T02:14:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.ea287a2c8571c1a42d6eaf21d0d6614c41eabcb0.003.2,2025-08-20T14:31:00-04:00</value>
+        </cap:parameter>
+        <cap:scope>Public</cap:scope>
+        <cap:code>IPAWSv1.0</cap:code>
+        <cap:language>en-US</cap:language>
+        <cap:web>http://www.weather.gov</cap:web>
+        <cap:eventCode>
+            <valueName>SAME</valueName>
+            <value>NWS</value>
+        </cap:eventCode>
+        <cap:eventCode>
+            <valueName>NationalWeatherService</valueName>
+            <value>GLW</value>
+        </cap:eventCode>
+    </entry>
+    <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b7dc52635c5ddb7bd392f44bee382f8802dc46ff.006.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b7dc52635c5ddb7bd392f44bee382f8802dc46ff.006.1.cap"/>
+        <updated>2025-08-22T02:23:00-04:00</updated>
+        <published>2025-08-22T02:23:00-04:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>Gale Warning issued August 22 at 2:23AM EDT until August 22 at 8:00PM EDT by NWS Boston/Norton MA</title>
+        <summary>* WHAT...Northeast winds 15 to 25 kt with gusts up to 35 kt and
+seas 6 to 11 feet.
+
+* WHERE...Coastal waters east of Ipswich Bay and the Stellwagen
+Bank National Marine Sanctuary.
+
+* WHEN...Until 8 PM EDT this evening.
+
+* IMPACTS...Strong winds will cause hazardous seas which could
+capsize or damage vessels and reduce visibility.</summary>
+        <cap:event>Gale Warning</cap:event>
+        <cap:sent>2025-08-22T02:23:00-04:00</cap:sent>
+        <cap:effective>2025-08-22T02:23:00-04:00</cap:effective>
+        <cap:onset>2025-08-22T02:23:00-04:00</cap:onset>
+        <cap:expires>2025-08-22T16:00:00-04:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Update</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Expected</cap:urgency>
+        <cap:severity>Moderate</cap:severity>
+        <cap:certainty>Likely</cap:certainty>
+        <cap:areaDesc>Coastal waters east of Ipswich Bay and the Stellwagen Bank National Marine Sanctuary</cap:areaDesc>
+        <cap:polygon/>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>073250</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>ANZ250</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>MWWBOX</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>WHUS71 KBOX 220623</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>NWSheadline</valueName>
+            <value>GALE WARNING REMAINS IN EFFECT UNTIL 8 PM EDT THIS EVENING</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>VTEC</valueName>
+            <value>/O.CON.KBOX.GL.W.0026.000000T0000Z-250823T0000Z/</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventEndingTime</valueName>
+            <value>2025-08-22T20:00:00-04:00</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>expiredReferences</valueName>
+            <value>w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.2c13405589ef59fefc8928f688e1a0ced0aae7ec.006.1,2025-08-21T02:14:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.ea287a2c8571c1a42d6eaf21d0d6614c41eabcb0.006.1,2025-08-20T14:31:00-04:00</value>
         </cap:parameter>
         <cap:scope>Public</cap:scope>
         <cap:code>IPAWSv1.0</cap:code>
@@ -27798,6 +28051,109 @@ erosion.</summary>
         </cap:eventCode>
     </entry>
     <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b08a13af150553af5d93e2cc5696bc1ff08aff73.001.3</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b08a13af150553af5d93e2cc5696bc1ff08aff73.001.3.cap"/>
+        <updated>2025-08-22T02:21:00-04:00</updated>
+        <published>2025-08-22T02:21:00-04:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>Coastal Flood Advisory issued August 22 at 2:21AM EDT until August 23 at 2:00AM EDT by NWS Boston/Norton MA</title>
+        <summary>* WHAT...For the High Surf Advisory, large breaking waves of 5
+to 19 feet in the surf zone. For the Coastal Flood Advisory,
+up to one half foot of inundation above ground level expected
+in low- lying areas near shorelines and tidal waterways (3.6
+to 5.3 feet Mean Lower Low Water).
+
+* WHERE...Dukes and Nantucket MA Counties.
+
+* WHEN...For the High Surf Advisory, until 8 PM EDT Saturday.
+For the Coastal Flood Advisory, from 10 PM this evening to 2
+AM EDT Saturday.
+
+* IMPACTS...Roads remain passable. Low lying areas and roads
+near Nantucket Harbor, including Easy Street, may experience
+pockets of shallow flooding less than one foot deep. Dangerous
+swimming and surfing conditions and localized beach erosion.</summary>
+        <cap:event>Coastal Flood Advisory</cap:event>
+        <cap:sent>2025-08-22T02:21:00-04:00</cap:sent>
+        <cap:effective>2025-08-22T02:21:00-04:00</cap:effective>
+        <cap:onset>2025-08-22T22:00:00-04:00</cap:onset>
+        <cap:expires>2025-08-22T16:00:00-04:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Update</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Expected</cap:urgency>
+        <cap:severity>Minor</cap:severity>
+        <cap:certainty>Likely</cap:certainty>
+        <cap:areaDesc>Dukes; Nantucket</cap:areaDesc>
+        <cap:polygon/>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>025007</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>025019</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>MAZ023</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>MAZ024</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>CFWBOX</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>WHUS41 KBOX 220621</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>NWSheadline</valueName>
+            <value>HIGH SURF ADVISORY REMAINS IN EFFECT UNTIL 8 PM EDT SATURDAY... ...COASTAL FLOOD ADVISORY REMAINS IN EFFECT FROM 10 PM THIS EVENING TO 2 AM EDT SATURDAY... ...COASTAL FLOOD ADVISORY HAS EXPIRED</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>VTEC</valueName>
+            <value>/O.CON.KBOX.CF.Y.0004.250823T0200Z-250823T0600Z/</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventEndingTime</valueName>
+            <value>2025-08-23T02:00:00-04:00</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>expiredReferences</valueName>
+            <value>w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.67ca644ae6b5e41f6b925e0f63bd99e4f465433f.001.3,2025-08-21T02:13:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.74612ffcee0a514f260db5f271003de9e5a45cfa.001.4,2025-08-20T15:14:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.4aad927bef1a06197df1d9005bd6bdcb3658a1ec.001.2,2025-08-20T14:42:00-04:00</value>
+        </cap:parameter>
+        <cap:scope>Public</cap:scope>
+        <cap:code>IPAWSv1.0</cap:code>
+        <cap:language>en-US</cap:language>
+        <cap:web>http://www.weather.gov</cap:web>
+        <cap:eventCode>
+            <valueName>SAME</valueName>
+            <value>NWS</value>
+        </cap:eventCode>
+        <cap:eventCode>
+            <valueName>NationalWeatherService</valueName>
+            <value>CFY</value>
+        </cap:eventCode>
+    </entry>
+    <entry>
         <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b08a13af150553af5d93e2cc5696bc1ff08aff73.002.3</id>
         <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b08a13af150553af5d93e2cc5696bc1ff08aff73.002.3.cap"/>
         <updated>2025-08-22T02:21:00-04:00</updated>
@@ -27893,109 +28249,6 @@ and localized beach erosion.</summary>
         <cap:parameter>
             <valueName>eventEndingTime</valueName>
             <value>2025-08-22T22:00:00-04:00</value>
-        </cap:parameter>
-        <cap:scope>Public</cap:scope>
-        <cap:code>IPAWSv1.0</cap:code>
-        <cap:language>en-US</cap:language>
-        <cap:web>http://www.weather.gov</cap:web>
-        <cap:eventCode>
-            <valueName>SAME</valueName>
-            <value>NWS</value>
-        </cap:eventCode>
-        <cap:eventCode>
-            <valueName>NationalWeatherService</valueName>
-            <value>CFY</value>
-        </cap:eventCode>
-    </entry>
-    <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b08a13af150553af5d93e2cc5696bc1ff08aff73.001.3</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b08a13af150553af5d93e2cc5696bc1ff08aff73.001.3.cap"/>
-        <updated>2025-08-22T02:21:00-04:00</updated>
-        <published>2025-08-22T02:21:00-04:00</published>
-        <author>
-            <name>NWS</name>
-        </author>
-        <title>Coastal Flood Advisory issued August 22 at 2:21AM EDT until August 23 at 2:00AM EDT by NWS Boston/Norton MA</title>
-        <summary>* WHAT...For the High Surf Advisory, large breaking waves of 5
-to 19 feet in the surf zone. For the Coastal Flood Advisory,
-up to one half foot of inundation above ground level expected
-in low- lying areas near shorelines and tidal waterways (3.6
-to 5.3 feet Mean Lower Low Water).
-
-* WHERE...Dukes and Nantucket MA Counties.
-
-* WHEN...For the High Surf Advisory, until 8 PM EDT Saturday.
-For the Coastal Flood Advisory, from 10 PM this evening to 2
-AM EDT Saturday.
-
-* IMPACTS...Roads remain passable. Low lying areas and roads
-near Nantucket Harbor, including Easy Street, may experience
-pockets of shallow flooding less than one foot deep. Dangerous
-swimming and surfing conditions and localized beach erosion.</summary>
-        <cap:event>Coastal Flood Advisory</cap:event>
-        <cap:sent>2025-08-22T02:21:00-04:00</cap:sent>
-        <cap:effective>2025-08-22T02:21:00-04:00</cap:effective>
-        <cap:onset>2025-08-22T22:00:00-04:00</cap:onset>
-        <cap:expires>2025-08-22T16:00:00-04:00</cap:expires>
-        <cap:status>Actual</cap:status>
-        <cap:msgType>Update</cap:msgType>
-        <cap:category>Met</cap:category>
-        <cap:urgency>Expected</cap:urgency>
-        <cap:severity>Minor</cap:severity>
-        <cap:certainty>Likely</cap:certainty>
-        <cap:areaDesc>Dukes; Nantucket</cap:areaDesc>
-        <cap:polygon/>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>025007</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>025019</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>MAZ023</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>MAZ024</value>
-        </cap:geocode>
-        <cap:parameter>
-            <valueName>AWIPSidentifier</valueName>
-            <value>CFWBOX</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>WMOidentifier</valueName>
-            <value>WHUS41 KBOX 220621</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>NWSheadline</valueName>
-            <value>HIGH SURF ADVISORY REMAINS IN EFFECT UNTIL 8 PM EDT SATURDAY... ...COASTAL FLOOD ADVISORY REMAINS IN EFFECT FROM 10 PM THIS EVENING TO 2 AM EDT SATURDAY... ...COASTAL FLOOD ADVISORY HAS EXPIRED</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>EAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>NWEM</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>VTEC</valueName>
-            <value>/O.CON.KBOX.CF.Y.0004.250823T0200Z-250823T0600Z/</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>eventEndingTime</valueName>
-            <value>2025-08-23T02:00:00-04:00</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>expiredReferences</valueName>
-            <value>w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.67ca644ae6b5e41f6b925e0f63bd99e4f465433f.001.3,2025-08-21T02:13:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.74612ffcee0a514f260db5f271003de9e5a45cfa.001.4,2025-08-20T15:14:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.4aad927bef1a06197df1d9005bd6bdcb3658a1ec.001.2,2025-08-20T14:42:00-04:00</value>
         </cap:parameter>
         <cap:scope>Public</cap:scope>
         <cap:code>IPAWSv1.0</cap:code>
@@ -29958,112 +30211,6 @@ from shore into deeper water.</summary>
         </cap:eventCode>
     </entry>
     <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d02e12fb765bdd944a0d876f3e63632722b6bf2e.001.2</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d02e12fb765bdd944a0d876f3e63632722b6bf2e.001.2.cap"/>
-        <updated>2025-08-22T01:23:00-04:00</updated>
-        <published>2025-08-22T01:23:00-04:00</published>
-        <author>
-            <name>NWS</name>
-        </author>
-        <title>Coastal Flood Statement issued August 22 at 1:23AM EDT until August 23 at 12:00AM EDT by NWS Caribou ME</title>
-        <summary>* WHAT...Waves building to 7 to 10 feet, with a wave period of
-13 to 17 seconds. Minor splashover is possible at high tide
-Friday night.
-
-* WHERE...Coastal Hancock and Coastal Washington Counties.
-
-* WHEN...For the High Surf Advisory, from 6 PM this evening to 2
-PM EDT Saturday. For the Coastal Flood Statement, Friday evening
-at high tide.
-
-* IMPACTS...Rip currents and sneaker waves will lead to dangerous
-beach conditions. Some minor beach erosion is possible. Minor
-splashover possible during high tide Friday Evening. SHORELINE
-FLOOD IMPACTS...Building waves will cause minor splash-over on
-exposed coastal roads and shorelines. Pedestrians and motorists
-should use caution along shorelines. Large waves can present a
-danger to people on rocks above the water. Stay away from rock
-outcrops along the shoreline exposed to ocean waves...as waves
-can easily sweep people into the cold ocean water.</summary>
-        <cap:event>Coastal Flood Statement</cap:event>
-        <cap:sent>2025-08-22T01:23:00-04:00</cap:sent>
-        <cap:effective>2025-08-22T01:23:00-04:00</cap:effective>
-        <cap:onset>2025-08-22T22:00:00-04:00</cap:onset>
-        <cap:expires>2025-08-22T09:30:00-04:00</cap:expires>
-        <cap:status>Actual</cap:status>
-        <cap:msgType>Alert</cap:msgType>
-        <cap:category>Met</cap:category>
-        <cap:urgency>Expected</cap:urgency>
-        <cap:severity>Minor</cap:severity>
-        <cap:certainty>Likely</cap:certainty>
-        <cap:areaDesc>Coastal Hancock; Coastal Washington</cap:areaDesc>
-        <cap:polygon/>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>023009</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>023029</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>MEZ029</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>MEZ030</value>
-        </cap:geocode>
-        <cap:parameter>
-            <valueName>AWIPSidentifier</valueName>
-            <value>CFWCAR</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>WMOidentifier</valueName>
-            <value>WHUS41 KCAR 220523</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>NWSheadline</valueName>
-            <value>HIGH SURF ADVISORY REMAINS IN EFFECT UNTIL 2 PM EDT SATURDAY... ...COASTAL FLOOD STATEMENT REMAINS IN EFFECT THIS EVENING</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>EAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>NWEM</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>VTEC</valueName>
-            <value>/O.CON.KCAR.CF.S.0001.250823T0200Z-250823T0400Z/</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>eventEndingTime</valueName>
-            <value>2025-08-23T00:00:00-04:00</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>expiredReferences</valueName>
-            <value>w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.26d816b23a22bc89949dbb64e3be96317aa135d4.001.1,2025-08-21T13:59:00-04:00</value>
-        </cap:parameter>
-        <cap:scope>Public</cap:scope>
-        <cap:code>IPAWSv1.0</cap:code>
-        <cap:language>en-US</cap:language>
-        <cap:web>http://www.weather.gov</cap:web>
-        <cap:eventCode>
-            <valueName>SAME</valueName>
-            <value>NWS</value>
-        </cap:eventCode>
-        <cap:eventCode>
-            <valueName>NationalWeatherService</valueName>
-            <value>CFS</value>
-        </cap:eventCode>
-    </entry>
-    <entry>
         <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d02e12fb765bdd944a0d876f3e63632722b6bf2e.001.1</id>
         <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d02e12fb765bdd944a0d876f3e63632722b6bf2e.001.1.cap"/>
         <updated>2025-08-22T01:23:00-04:00</updated>
@@ -30167,6 +30314,112 @@ can easily sweep people into the cold ocean water.</summary>
         <cap:eventCode>
             <valueName>NationalWeatherService</valueName>
             <value>SUY</value>
+        </cap:eventCode>
+    </entry>
+    <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d02e12fb765bdd944a0d876f3e63632722b6bf2e.001.2</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d02e12fb765bdd944a0d876f3e63632722b6bf2e.001.2.cap"/>
+        <updated>2025-08-22T01:23:00-04:00</updated>
+        <published>2025-08-22T01:23:00-04:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>Coastal Flood Statement issued August 22 at 1:23AM EDT until August 23 at 12:00AM EDT by NWS Caribou ME</title>
+        <summary>* WHAT...Waves building to 7 to 10 feet, with a wave period of
+13 to 17 seconds. Minor splashover is possible at high tide
+Friday night.
+
+* WHERE...Coastal Hancock and Coastal Washington Counties.
+
+* WHEN...For the High Surf Advisory, from 6 PM this evening to 2
+PM EDT Saturday. For the Coastal Flood Statement, Friday evening
+at high tide.
+
+* IMPACTS...Rip currents and sneaker waves will lead to dangerous
+beach conditions. Some minor beach erosion is possible. Minor
+splashover possible during high tide Friday Evening. SHORELINE
+FLOOD IMPACTS...Building waves will cause minor splash-over on
+exposed coastal roads and shorelines. Pedestrians and motorists
+should use caution along shorelines. Large waves can present a
+danger to people on rocks above the water. Stay away from rock
+outcrops along the shoreline exposed to ocean waves...as waves
+can easily sweep people into the cold ocean water.</summary>
+        <cap:event>Coastal Flood Statement</cap:event>
+        <cap:sent>2025-08-22T01:23:00-04:00</cap:sent>
+        <cap:effective>2025-08-22T01:23:00-04:00</cap:effective>
+        <cap:onset>2025-08-22T22:00:00-04:00</cap:onset>
+        <cap:expires>2025-08-22T09:30:00-04:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Alert</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Expected</cap:urgency>
+        <cap:severity>Minor</cap:severity>
+        <cap:certainty>Likely</cap:certainty>
+        <cap:areaDesc>Coastal Hancock; Coastal Washington</cap:areaDesc>
+        <cap:polygon/>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>023009</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>023029</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>MEZ029</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>MEZ030</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>CFWCAR</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>WHUS41 KCAR 220523</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>NWSheadline</valueName>
+            <value>HIGH SURF ADVISORY REMAINS IN EFFECT UNTIL 2 PM EDT SATURDAY... ...COASTAL FLOOD STATEMENT REMAINS IN EFFECT THIS EVENING</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>VTEC</valueName>
+            <value>/O.CON.KCAR.CF.S.0001.250823T0200Z-250823T0400Z/</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventEndingTime</valueName>
+            <value>2025-08-23T00:00:00-04:00</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>expiredReferences</valueName>
+            <value>w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.26d816b23a22bc89949dbb64e3be96317aa135d4.001.1,2025-08-21T13:59:00-04:00</value>
+        </cap:parameter>
+        <cap:scope>Public</cap:scope>
+        <cap:code>IPAWSv1.0</cap:code>
+        <cap:language>en-US</cap:language>
+        <cap:web>http://www.weather.gov</cap:web>
+        <cap:eventCode>
+            <valueName>SAME</valueName>
+            <value>NWS</value>
+        </cap:eventCode>
+        <cap:eventCode>
+            <valueName>NationalWeatherService</valueName>
+            <value>CFS</value>
         </cap:eventCode>
     </entry>
     <entry>
@@ -31536,136 +31789,6 @@ third of the combined wind-wave and swell height.
         </cap:eventCode>
     </entry>
     <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8736e5c18a7830e431c013a9a3b1a7eb5fb1be77.002.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8736e5c18a7830e431c013a9a3b1a7eb5fb1be77.002.1.cap"/>
-        <updated>2025-08-21T14:11:00-07:00</updated>
-        <published>2025-08-21T14:11:00-07:00</published>
-        <author>
-            <name>NWS</name>
-        </author>
-        <title>Red Flag Warning issued August 21 at 2:11PM PDT until August 23 at 9:00PM PDT by NWS Los Angeles/Oxnard CA</title>
-        <summary>...RED FLAG WARNING IN EFFECT UNTIL 9 PM PDT SATURDAY FOR AN
-UNSEASONABLY HOT AND UNSTABLE AIR MASS CAPABLE OF PRODUCING
-EXTREME FIRE BEHAVIOR FROM VERTICAL PLUME GROWTH... LOW RELATIVE
-HUMIDITY...AND LOCALLY BREEZY WINDS FOR PORTIONS OF THE MOUNTAINS
-AND FOOTHILLS OF LOS ANGELES, VENTURA, SANTA BARBARA, AND SAN
-LUIS OBISPO COUNTIES...
-
-.A significant heatwave will continue through this weekend,
-bringing dangerous fire-weather conditions.
-
-* TEMPERATURES...Unseasonably hot high temperatures, generally
-95- 105 degrees, producing unseasonably unstable conditions.
-
-* RELATIVE HUMIDITY...Minimum relative humidity 8-20 percent.
-
-* THUNDERSTORMS...There is a less than 10 percent chance of
-isolated thunderstorms Friday through the weekend, and any
-accompanying lightning strikes will be capable of starting new
-fires on the peripheries of rain cores.
-
-* WINDS...Diurnal wind patterns with speeds of 5-10 mph gusting to
-10-20 mph, locally higher in wind-favored areas such as through
-passes and canyons.
-
-* IMPACTS...If fire ignition occurs, conditions are favorable
-for extreme fire behavior and rapid fire growth, which could
-threaten life and property. Be aware of sudden re-direction of
-fires in response to passing outflow boundaries.
-
-* ADDITIONAL DETAILS...Fire-weather headlines may eventually
-need to be extended into Sunday.</summary>
-        <cap:event>Red Flag Warning</cap:event>
-        <cap:sent>2025-08-21T14:11:00-07:00</cap:sent>
-        <cap:effective>2025-08-21T14:11:00-07:00</cap:effective>
-        <cap:onset>2025-08-21T14:11:00-07:00</cap:onset>
-        <cap:expires>2025-08-23T21:00:00-07:00</cap:expires>
-        <cap:status>Actual</cap:status>
-        <cap:msgType>Update</cap:msgType>
-        <cap:category>Met</cap:category>
-        <cap:urgency>Expected</cap:urgency>
-        <cap:severity>Severe</cap:severity>
-        <cap:certainty>Likely</cap:certainty>
-        <cap:areaDesc>Cuyama Valley; San Luis Obispo County Mountains; Santa Ynez Mountains Western Range; Santa Ynez Mountains Eastern Range; Santa Barbara County Interior Mountains</cap:areaDesc>
-        <cap:polygon/>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>006083</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>006079</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>006111</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>CAZ238</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>CAZ345</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>CAZ351</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>CAZ352</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>CAZ353</value>
-        </cap:geocode>
-        <cap:parameter>
-            <valueName>AWIPSidentifier</valueName>
-            <value>RFWLOX</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>WMOidentifier</valueName>
-            <value>WWUS86 KLOX 212111</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>NWSheadline</valueName>
-            <value>RED FLAG WARNING REMAINS IN EFFECT UNTIL 9 PM PDT SATURDAY FOR AN UNSEASONABLY HOT AND UNSTABLE AIR MASS CAPABLE OF PRODUCING EXTREME FIRE BEHAVIOR FROM VERTICAL PLUME GROWTH...LOW RELATIVE HUMIDITY...AND LOCALLY BREEZY WINDS FOR PORTIONS OF THE MOUNTAINS AND FOOTHILLS OF SANTA BARBARA AND SAN LUIS OBISPO COUNTIES</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>EAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>NWEM</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>VTEC</valueName>
-            <value>/O.CON.KLOX.FW.W.0005.000000T0000Z-250824T0400Z/</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>eventEndingTime</valueName>
-            <value>2025-08-23T21:00:00-07:00</value>
-        </cap:parameter>
-        <cap:scope>Public</cap:scope>
-        <cap:code>IPAWSv1.0</cap:code>
-        <cap:language>en-US</cap:language>
-        <cap:web>http://www.weather.gov</cap:web>
-        <cap:eventCode>
-            <valueName>SAME</valueName>
-            <value>NWS</value>
-        </cap:eventCode>
-        <cap:eventCode>
-            <valueName>NationalWeatherService</valueName>
-            <value>FWW</value>
-        </cap:eventCode>
-    </entry>
-    <entry>
         <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8736e5c18a7830e431c013a9a3b1a7eb5fb1be77.001.1</id>
         <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8736e5c18a7830e431c013a9a3b1a7eb5fb1be77.001.1.cap"/>
         <updated>2025-08-21T14:11:00-07:00</updated>
@@ -31778,6 +31901,136 @@ need to be extended into Sunday.</summary>
         <cap:parameter>
             <valueName>NWSheadline</valueName>
             <value>RED FLAG WARNING REMAINS IN EFFECT UNTIL 9 PM PDT SATURDAY FOR AN UNSEASONABLY HOT AND UNSTABLE AIR MASS CAPABLE OF PRODUCING EXTREME FIRE BEHAVIOR FROM VERTICAL PLUME GROWTH...LOW RELATIVE HUMIDITY...AND LOCALLY BREEZY WINDS FOR PORTIONS OF THE MOUNTAINS AND FOOTHILLS OF LOS ANGELES AND VENTURA COUNTIES</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>VTEC</valueName>
+            <value>/O.CON.KLOX.FW.W.0005.000000T0000Z-250824T0400Z/</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventEndingTime</valueName>
+            <value>2025-08-23T21:00:00-07:00</value>
+        </cap:parameter>
+        <cap:scope>Public</cap:scope>
+        <cap:code>IPAWSv1.0</cap:code>
+        <cap:language>en-US</cap:language>
+        <cap:web>http://www.weather.gov</cap:web>
+        <cap:eventCode>
+            <valueName>SAME</valueName>
+            <value>NWS</value>
+        </cap:eventCode>
+        <cap:eventCode>
+            <valueName>NationalWeatherService</valueName>
+            <value>FWW</value>
+        </cap:eventCode>
+    </entry>
+    <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8736e5c18a7830e431c013a9a3b1a7eb5fb1be77.002.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8736e5c18a7830e431c013a9a3b1a7eb5fb1be77.002.1.cap"/>
+        <updated>2025-08-21T14:11:00-07:00</updated>
+        <published>2025-08-21T14:11:00-07:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>Red Flag Warning issued August 21 at 2:11PM PDT until August 23 at 9:00PM PDT by NWS Los Angeles/Oxnard CA</title>
+        <summary>...RED FLAG WARNING IN EFFECT UNTIL 9 PM PDT SATURDAY FOR AN
+UNSEASONABLY HOT AND UNSTABLE AIR MASS CAPABLE OF PRODUCING
+EXTREME FIRE BEHAVIOR FROM VERTICAL PLUME GROWTH... LOW RELATIVE
+HUMIDITY...AND LOCALLY BREEZY WINDS FOR PORTIONS OF THE MOUNTAINS
+AND FOOTHILLS OF LOS ANGELES, VENTURA, SANTA BARBARA, AND SAN
+LUIS OBISPO COUNTIES...
+
+.A significant heatwave will continue through this weekend,
+bringing dangerous fire-weather conditions.
+
+* TEMPERATURES...Unseasonably hot high temperatures, generally
+95- 105 degrees, producing unseasonably unstable conditions.
+
+* RELATIVE HUMIDITY...Minimum relative humidity 8-20 percent.
+
+* THUNDERSTORMS...There is a less than 10 percent chance of
+isolated thunderstorms Friday through the weekend, and any
+accompanying lightning strikes will be capable of starting new
+fires on the peripheries of rain cores.
+
+* WINDS...Diurnal wind patterns with speeds of 5-10 mph gusting to
+10-20 mph, locally higher in wind-favored areas such as through
+passes and canyons.
+
+* IMPACTS...If fire ignition occurs, conditions are favorable
+for extreme fire behavior and rapid fire growth, which could
+threaten life and property. Be aware of sudden re-direction of
+fires in response to passing outflow boundaries.
+
+* ADDITIONAL DETAILS...Fire-weather headlines may eventually
+need to be extended into Sunday.</summary>
+        <cap:event>Red Flag Warning</cap:event>
+        <cap:sent>2025-08-21T14:11:00-07:00</cap:sent>
+        <cap:effective>2025-08-21T14:11:00-07:00</cap:effective>
+        <cap:onset>2025-08-21T14:11:00-07:00</cap:onset>
+        <cap:expires>2025-08-23T21:00:00-07:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Update</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Expected</cap:urgency>
+        <cap:severity>Severe</cap:severity>
+        <cap:certainty>Likely</cap:certainty>
+        <cap:areaDesc>Cuyama Valley; San Luis Obispo County Mountains; Santa Ynez Mountains Western Range; Santa Ynez Mountains Eastern Range; Santa Barbara County Interior Mountains</cap:areaDesc>
+        <cap:polygon/>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>006083</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>006079</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>006111</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>CAZ238</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>CAZ345</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>CAZ351</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>CAZ352</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>CAZ353</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>RFWLOX</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>WWUS86 KLOX 212111</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>NWSheadline</valueName>
+            <value>RED FLAG WARNING REMAINS IN EFFECT UNTIL 9 PM PDT SATURDAY FOR AN UNSEASONABLY HOT AND UNSTABLE AIR MASS CAPABLE OF PRODUCING EXTREME FIRE BEHAVIOR FROM VERTICAL PLUME GROWTH...LOW RELATIVE HUMIDITY...AND LOCALLY BREEZY WINDS FOR PORTIONS OF THE MOUNTAINS AND FOOTHILLS OF SANTA BARBARA AND SAN LUIS OBISPO COUNTIES</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>BLOCKCHANNEL</valueName>
@@ -33655,8 +33908,8 @@ Island, S wind 30 kt. Seas 11 ft. Rain showers.
         </cap:eventCode>
     </entry>
     <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.86e2eaf8c9091509828164bdf052d14e8ef11fae.035.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.86e2eaf8c9091509828164bdf052d14e8ef11fae.035.1.cap"/>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.86e2eaf8c9091509828164bdf052d14e8ef11fae.033.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.86e2eaf8c9091509828164bdf052d14e8ef11fae.033.1.cap"/>
         <updated>2025-08-21T03:30:00-08:00</updated>
         <published>2025-08-21T03:30:00-08:00</published>
         <author>
@@ -33670,12 +33923,13 @@ Wind forecasts reflect the predominant speed and direction
 expected. Sea forecasts represent an average of the highest
 one-third of the combined wind wave and swell height.
 
-.TODAY...SW wind 15 kt. Seas 5 ft.
-.TONIGHT...S wind 15 kt. Seas 4 ft. Areas of fog.
-.FRI...S wind 30 kt. Seas 7 ft. Areas of fog.
-.FRI NIGHT...SW wind 30 kt. Seas 8 ft.
-.SAT...SW wind 25 kt. Seas 8 ft.
-.SUN THROUGH MON...S wind 20 kt. Seas 8 ft.</summary>
+.TODAY...SW wind 15 kt diminishing to 10 kt in the afternoon. Seas 2 ft.
+.TONIGHT...SW wind 10 kt. Seas 2 ft. Areas of fog.
+.FRI...S wind 15 kt increasing to 25 kt in the afternoon. Seas 3 ft.
+Areas of fog.
+.FRI NIGHT...S wind 25 kt. Seas 4 ft.
+.SAT THROUGH SUN...S wind 20 kt. Seas 4 ft.
+.MON...S wind 25 kt. Seas 7 ft.</summary>
         <cap:event>Small Craft Advisory</cap:event>
         <cap:sent>2025-08-21T03:30:00-08:00</cap:sent>
         <cap:effective>2025-08-21T03:30:00-08:00</cap:effective>
@@ -33687,15 +33941,15 @@ one-third of the combined wind wave and swell height.
         <cap:urgency>Expected</cap:urgency>
         <cap:severity>Minor</cap:severity>
         <cap:certainty>Likely</cap:certainty>
-        <cap:areaDesc>North and West of Nunivak Island</cap:areaDesc>
+        <cap:areaDesc>Kuskokwim Delta and Etolin Strait out to 15 NM</cap:areaDesc>
         <cap:polygon/>
         <cap:geocode>
             <valueName>SAME</valueName>
-            <value>058765</value>
+            <value>058763</value>
         </cap:geocode>
         <cap:geocode>
             <valueName>UGC</valueName>
-            <value>PKZ765</value>
+            <value>PKZ763</value>
         </cap:geocode>
         <cap:parameter>
             <valueName>AWIPSidentifier</valueName>
@@ -33723,7 +33977,7 @@ one-third of the combined wind wave and swell height.
         </cap:parameter>
         <cap:parameter>
             <valueName>VTEC</valueName>
-            <value>/O.NEW.PAFC.SC.Y.9137.250822T1300Z-250823T0100Z/</value>
+            <value>/O.NEW.PAFC.SC.Y.9135.250822T1300Z-250823T0100Z/</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>eventEndingTime</valueName>
@@ -33832,8 +34086,8 @@ Areas of fog.
         </cap:eventCode>
     </entry>
     <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.86e2eaf8c9091509828164bdf052d14e8ef11fae.033.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.86e2eaf8c9091509828164bdf052d14e8ef11fae.033.1.cap"/>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.86e2eaf8c9091509828164bdf052d14e8ef11fae.035.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.86e2eaf8c9091509828164bdf052d14e8ef11fae.035.1.cap"/>
         <updated>2025-08-21T03:30:00-08:00</updated>
         <published>2025-08-21T03:30:00-08:00</published>
         <author>
@@ -33847,13 +34101,12 @@ Wind forecasts reflect the predominant speed and direction
 expected. Sea forecasts represent an average of the highest
 one-third of the combined wind wave and swell height.
 
-.TODAY...SW wind 15 kt diminishing to 10 kt in the afternoon. Seas 2 ft.
-.TONIGHT...SW wind 10 kt. Seas 2 ft. Areas of fog.
-.FRI...S wind 15 kt increasing to 25 kt in the afternoon. Seas 3 ft.
-Areas of fog.
-.FRI NIGHT...S wind 25 kt. Seas 4 ft.
-.SAT THROUGH SUN...S wind 20 kt. Seas 4 ft.
-.MON...S wind 25 kt. Seas 7 ft.</summary>
+.TODAY...SW wind 15 kt. Seas 5 ft.
+.TONIGHT...S wind 15 kt. Seas 4 ft. Areas of fog.
+.FRI...S wind 30 kt. Seas 7 ft. Areas of fog.
+.FRI NIGHT...SW wind 30 kt. Seas 8 ft.
+.SAT...SW wind 25 kt. Seas 8 ft.
+.SUN THROUGH MON...S wind 20 kt. Seas 8 ft.</summary>
         <cap:event>Small Craft Advisory</cap:event>
         <cap:sent>2025-08-21T03:30:00-08:00</cap:sent>
         <cap:effective>2025-08-21T03:30:00-08:00</cap:effective>
@@ -33865,15 +34118,15 @@ Areas of fog.
         <cap:urgency>Expected</cap:urgency>
         <cap:severity>Minor</cap:severity>
         <cap:certainty>Likely</cap:certainty>
-        <cap:areaDesc>Kuskokwim Delta and Etolin Strait out to 15 NM</cap:areaDesc>
+        <cap:areaDesc>North and West of Nunivak Island</cap:areaDesc>
         <cap:polygon/>
         <cap:geocode>
             <valueName>SAME</valueName>
-            <value>058763</value>
+            <value>058765</value>
         </cap:geocode>
         <cap:geocode>
             <valueName>UGC</valueName>
-            <value>PKZ763</value>
+            <value>PKZ765</value>
         </cap:geocode>
         <cap:parameter>
             <valueName>AWIPSidentifier</valueName>
@@ -33901,7 +34154,7 @@ Areas of fog.
         </cap:parameter>
         <cap:parameter>
             <valueName>VTEC</valueName>
-            <value>/O.NEW.PAFC.SC.Y.9135.250822T1300Z-250823T0100Z/</value>
+            <value>/O.NEW.PAFC.SC.Y.9137.250822T1300Z-250823T0100Z/</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>eventEndingTime</valueName>
