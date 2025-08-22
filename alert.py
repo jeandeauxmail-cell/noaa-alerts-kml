@@ -34,11 +34,6 @@ def fetch_feed():
         response.raise_for_status()
         logger.info(f"Successfully fetched feed ({len(response.content)} bytes)")
         
-        # Debug: Save raw feed for inspection
-        debug_file = Path(OUTPUT_DIR) / "debug_feed.xml"
-        debug_file.write_bytes(response.content)
-        logger.info(f"Raw feed saved to {debug_file} for debugging")
-        
         return ET.fromstring(response.content)
     except requests.exceptions.RequestException as e:
         logger.error(f"Failed to fetch CAP feed: {e}")
