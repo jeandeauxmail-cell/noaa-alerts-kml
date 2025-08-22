@@ -25,24 +25,54 @@ def extract_alerts(feed):
         "cap": "urn:oasis:names:tc:emergency:cap:1.2"
     }
     alerts = []
-    for entry in feed.findall("atom:entry", ns):
-        area = entry.find("cap:areaDesc", ns)
-        polygon = entry.find("cap:polygon", ns)
-        severity = entry.find("cap:severity", ns)
-        effective = entry.find("cap:effective", ns)
-        expires = entry.find("cap:expires", ns)
-        title = entry.find("atom:title", ns)
 
-        if polygon is not None:
-            coords = polygon.text.strip().split(" ")
-            kml_coords = " ".join([f"{lon},{lat},0" for lat, lon in (pt.split(",") for pt in coords)])
-            alerts.append({
-                "title": title.text if title is not None else "Alert",
-                "severity": severity.text if severity is not None else "Minor",
-                "effective": effective.text if effective is not None else "",
-                "expires": expires.text if expires is not None else "",
-                "coords": kml_coords
-            })
+    for entry in feed.findall("atom:entry", ns):
+        # 1. Basic metadata
+        title_elem = entry.find("atom:title", ns)
+        title = title_elem.text if title_elem is not None else "Alert"
+
+        # 2. Traverse into the CAP payload
+        content = entry.find("atom:content", ns)
+        if content is None:
+            continue
+
+        cap_alert = content.find("cap:alert", ns)
+        if cap_alert is None:
+            continue
+
+        # 3. Loop through each <info> block
+        for info in cap_alert.findall("cap:info", ns):
+            severity_elem = info.find("cap:severity", ns)
+            effective_elem = info.find("cap:effective", ns)
+            expires_elem = info.find("cap:expires", ns)
+
+            severity = severity_elem.text if severity_elem is not None else "Minor"
+            effective = effective_elem.text if effective_elem is not None else ""
+            expires = expires_elem.text if expires_elem is not None else ""
+
+            # 4. Loop through each <area> block
+            for area in info.findall("cap:area", ns):
+                polygon = area.find("cap:polygon", ns)
+
+                # 5. Skip if missing or empty
+                if polygon is None or not polygon.text or not polygon.text.strip():
+                    continue
+
+                # 6. Build KML-ready coordinates
+                raw_pts = polygon.text.strip().split()
+                kml_coords = " ".join(
+                    f"{lon},{lat},0"
+                    for lat, lon in (pt.split(",") for pt in raw_pts)
+                )
+
+                alerts.append({
+                    "title": title,
+                    "severity": severity,
+                    "effective": effective,
+                    "expires": expires,
+                    "coords": kml_coords
+                })
+
     return alerts
 
 def build_kml(alerts):
