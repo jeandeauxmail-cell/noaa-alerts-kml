@@ -27,9 +27,19 @@ def fetch_feed():
     """Fetch the CAP feed with error handling and timeout."""
     try:
         logger.info(f"Fetching CAP feed from {CAP_FEED_URL}")
-        response = requests.get(CAP_FEED_URL, timeout=30)
+        # Add User-Agent to mimic a regular browser request
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (compatible; WeatherAlertsKML/1.0)'
+        }
+        response = requests.get(CAP_FEED_URL, timeout=30, headers=headers)
         response.raise_for_status()
         logger.info(f"Successfully fetched feed ({len(response.content)} bytes)")
+        
+        # Debug: Save raw feed for inspection
+        debug_file = Path(OUTPUT_DIR) / "debug_feed.xml"
+        debug_file.write_bytes(response.content)
+        logger.info(f"Raw feed saved to {debug_file} for debugging")
+        
         return ET.fromstring(response.content)
     except requests.exceptions.RequestException as e:
         logger.error(f"Failed to fetch CAP feed: {e}")
@@ -38,16 +48,73 @@ def fetch_feed():
         logger.error(f"Failed to parse XML feed: {e}")
         raise
 
+def debug_feed_structure(feed):
+    """Debug the feed structure to understand what we're working with."""
+    logger.info("=== DEBUGGING FEED STRUCTURE ===")
+    
+    # Check root element
+    logger.info(f"Root element: {feed.tag}")
+    logger.info(f"Root attributes: {feed.attrib}")
+    
+    # Check namespaces
+    ns = {
+        "atom": "http://www.w3.org/2005/Atom",
+        "cap": "urn:oasis:names:tc:emergency:cap:1.2"
+    }
+    
+    # Count entries
+    entries = feed.findall("atom:entry", ns)
+    logger.info(f"Found {len(entries)} entries")
+    
+    # Examine first few entries
+    for i, entry in enumerate(entries[:3]):
+        logger.info(f"--- Entry {i+1} ---")
+        title_elem = entry.find("atom:title", ns)
+        title = title_elem.text if title_elem is not None else "No title"
+        logger.info(f"Title: {title}")
+        
+        content = entry.find("atom:content", ns)
+        if content is None:
+            logger.info("No content element found")
+            continue
+        
+        cap_alert = content.find("cap:alert", ns)
+        if cap_alert is None:
+            logger.info("No cap:alert element found in content")
+            continue
+        
+        info_blocks = cap_alert.findall("cap:info", ns)
+        logger.info(f"Found {len(info_blocks)} info blocks")
+        
+        for j, info in enumerate(info_blocks):
+            severity_elem = info.find("cap:severity", ns)
+            severity = severity_elem.text if severity_elem is not None else "No severity"
+            logger.info(f"  Info {j+1} severity: {severity}")
+            
+            areas = info.findall("cap:area", ns)
+            logger.info(f"  Info {j+1} has {len(areas)} areas")
+            
+            for k, area in enumerate(areas):
+                polygon = area.find("cap:polygon", ns)
+                has_polygon = polygon is not None and polygon.text and polygon.text.strip()
+                logger.info(f"    Area {k+1} has polygon: {has_polygon}")
+                if has_polygon:
+                    logger.info(f"    Polygon coords length: {len(polygon.text.strip().split())}")
+
 def extract_alerts(feed):
     """Extract alerts from the CAP feed with improved error handling."""
+    # First debug the structure
+    debug_feed_structure(feed)
+    
     ns = {
         "atom": "http://www.w3.org/2005/Atom",
         "cap": "urn:oasis:names:tc:emergency:cap:1.2"
     }
     alerts = []
     skipped_alerts = 0
+    polygon_issues = 0
 
-    logger.info("Extracting alerts from feed")
+    logger.info("=== EXTRACTING ALERTS ===")
     
     for entry in feed.findall("atom:entry", ns):
         try:
@@ -62,11 +129,13 @@ def extract_alerts(feed):
             # Traverse into the CAP payload
             content = entry.find("atom:content", ns)
             if content is None:
+                logger.debug(f"Skipping alert '{title}': no content element")
                 skipped_alerts += 1
                 continue
 
             cap_alert = content.find("cap:alert", ns)
             if cap_alert is None:
+                logger.debug(f"Skipping alert '{title}': no cap:alert element")
                 skipped_alerts += 1
                 continue
 
@@ -84,6 +153,8 @@ def extract_alerts(feed):
                 event = event_elem.text if event_elem is not None else ""
                 description = description_elem.text if description_elem is not None else ""
 
+                logger.debug(f"Processing alert: {title} - {event} - {severity}")
+
                 # Loop through each <area> block
                 for area in info.findall("cap:area", ns):
                     area_desc_elem = area.find("cap:areaDesc", ns)
@@ -93,29 +164,45 @@ def extract_alerts(feed):
 
                     # Skip if missing or empty polygon
                     if polygon is None or not polygon.text or not polygon.text.strip():
+                        logger.debug(f"Skipping area for '{title}': no polygon data")
+                        polygon_issues += 1
                         continue
 
                     # Validate and build KML-ready coordinates
                     try:
                         raw_pts = polygon.text.strip().split()
+                        logger.debug(f"Processing polygon with {len(raw_pts)} points for '{title}'")
+                        
                         if len(raw_pts) < 3:  # Need at least 3 points for a polygon
+                            logger.debug(f"Skipping polygon: insufficient points ({len(raw_pts)})")
+                            polygon_issues += 1
                             continue
                             
                         kml_coords_list = []
+                        invalid_coords = 0
+                        
                         for pt in raw_pts:
                             if ',' not in pt:
+                                invalid_coords += 1
                                 continue
-                            lat, lon = pt.split(",", 1)
-                            # Validate coordinates
                             try:
+                                lat, lon = pt.split(",", 1)
                                 lat_float = float(lat)
                                 lon_float = float(lon)
                                 if -90 <= lat_float <= 90 and -180 <= lon_float <= 180:
                                     kml_coords_list.append(f"{lon},{lat},0")
+                                else:
+                                    invalid_coords += 1
                             except ValueError:
+                                invalid_coords += 1
                                 continue
                         
+                        if invalid_coords > 0:
+                            logger.debug(f"Found {invalid_coords} invalid coordinates in polygon")
+                        
                         if len(kml_coords_list) < 3:
+                            logger.debug(f"Skipping polygon: insufficient valid coordinates ({len(kml_coords_list)})")
+                            polygon_issues += 1
                             continue
                             
                         kml_coords = " ".join(kml_coords_list)
@@ -136,8 +223,11 @@ def extract_alerts(feed):
                             "updated": updated
                         })
                         
+                        logger.info(f"Successfully processed alert: {title} ({event}) - {severity}")
+                        
                     except Exception as e:
                         logger.warning(f"Error processing polygon for alert '{title}': {e}")
+                        polygon_issues += 1
                         continue
 
         except Exception as e:
@@ -145,7 +235,11 @@ def extract_alerts(feed):
             skipped_alerts += 1
             continue
 
-    logger.info(f"Extracted {len(alerts)} alerts, skipped {skipped_alerts}")
+    logger.info(f"=== EXTRACTION SUMMARY ===")
+    logger.info(f"Extracted {len(alerts)} alerts")
+    logger.info(f"Skipped {skipped_alerts} alerts (no CAP content)")
+    logger.info(f"Polygon issues: {polygon_issues}")
+    
     return alerts
 
 def build_kml(alerts):
